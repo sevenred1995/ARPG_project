@@ -76,6 +76,7 @@ public class TaskManager : MonoBehaviour {
     {
         currentTask.TaskProgress = TaskProgress.Accept;
         //前往副本入口点
+        PlayerMove.SetPostion(PlayerMove.transcriptGo.transform.position);
     }
     public void OnDestination()
     {

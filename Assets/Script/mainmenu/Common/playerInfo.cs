@@ -16,6 +16,11 @@ public enum InfoType
     Equip,
     All
 }
+public enum PlayerType
+{
+    Warrior,
+    FemaleAssassin
+}
 public class playerInfo : MonoBehaviour {
     public static playerInfo _instance;
     #region property
@@ -30,6 +35,7 @@ public class playerInfo : MonoBehaviour {
     private int _toughen = 50;
     private int _hp;
     private int _damage;
+    private PlayerType playerType;
 //     private int _helmID=0;
 //     private int _clothID=0;
 //     private int _weaponID=0;
@@ -96,6 +102,11 @@ public class playerInfo : MonoBehaviour {
     {
         get { return _damage; }
         set { _damage = value; }
+    }
+    public PlayerType PlayerType
+    {
+        get { return playerType; }
+        set { playerType = value; }
     }
     #region Test
     //     public int HelmID

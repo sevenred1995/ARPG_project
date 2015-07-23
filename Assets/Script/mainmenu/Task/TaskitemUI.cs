@@ -37,7 +37,12 @@ public class TaskitemUI : MonoBehaviour {
     public void InitItem(Task t)
     {
         this.task = t;
-        switch(t.TaskType)
+        task.OnTaskChanged += this.OnTaskChanged;
+        UpdateShow();
+    }
+    void UpdateShow()
+    {
+        switch (task.TaskType)
         {
             case TaskType.Main:
                 taskTypeSprite.spriteName = "pic_主线";
@@ -49,10 +54,10 @@ public class TaskitemUI : MonoBehaviour {
                 taskTypeSprite.spriteName = "pic_日常";
                 break;
         }
-        switch(t.TaskProgress)
+        switch (task.TaskProgress)
         {
             case TaskProgress.NoStart:
-                 battleBtn.gameObject.SetActive(true);
+                battleBtn.gameObject.SetActive(true);
                 getRewardBtn.gameObject.SetActive(false);
                 battleLabel.text = "下一步";
                 break;
@@ -62,42 +67,47 @@ public class TaskitemUI : MonoBehaviour {
                 battleLabel.text = "战斗";
                 break;
             case TaskProgress.Complete:
-                 battleBtn.gameObject.SetActive(false);
-                 getRewardBtn.gameObject.SetActive(true);
+                battleBtn.gameObject.SetActive(false);
+                getRewardBtn.gameObject.SetActive(true);
                 break;
         }
-        iconSprite.spriteName = t.Icon;
-        nameLabel.text = t.Name;
-        desLabel.text = t.Des;
-        if(t.Coin==0&&t.Diamond!=0)
+        iconSprite.spriteName = task.Icon;
+        nameLabel.text = task.Name;
+        desLabel.text = task.Des;
+        if (task.Coin == 0 && task.Diamond != 0)
         {
             reward1Sprite.spriteName = "钻石";
-            reward1Label.text ="X"+ t.Diamond.ToString();
+            reward1Label.text = "X" + task.Diamond.ToString();
             reward2Sprite.gameObject.SetActive(false);
         }
-        else if(t.Coin!=0&&t.Diamond==0)
+        else if (task.Coin != 0 && task.Diamond == 0)
         {
             reward1Sprite.spriteName = "金币";
-            reward1Label.text = "X" + t.Coin.ToString();
+            reward1Label.text = "X" + task.Coin.ToString();
             reward2Sprite.gameObject.SetActive(false);
         }
-        else if(t.Coin!=0&&t.Diamond!=0)
+        else if (task.Coin != 0 && task.Diamond != 0)
         {
             reward1Sprite.spriteName = "金币";
-            reward1Label.text = "X" + t.Coin.ToString();
+            reward1Label.text = "X" + task.Coin.ToString();
             reward2Sprite.spriteName = "钻石";
-            reward2Label.text = "X" + t.Diamond.ToString();
+            reward2Label.text = "X" + task.Diamond.ToString();
         }
-
     }
 
     void OnBattle()
     {
+        TaskUI._instance.Hide();
         TaskManager._instance.OnExcuteTask(task);
     }
     void OnReward()
     {
+        //领取奖励
 
+    }
+    void OnTaskChanged()
+    {
+        UpdateShow();
     }
 
 }

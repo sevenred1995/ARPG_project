@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class TaskUI : MonoBehaviour {
+    public static TaskUI _instance;
     private UIGrid taskListGrid;
     private GameObject taskItemPrefab;
     private UIButton closeBtn;
@@ -9,6 +10,7 @@ public class TaskUI : MonoBehaviour {
     private TweenScale tween;
     void Awake()
     {
+        _instance = this;
         taskListGrid = transform.Find("Scroll View/Grid").GetComponent<UIGrid>();
         taskItemPrefab = Resources.Load<GameObject>("Task-Item");
         closeBtn = transform.Find("btn-close").GetComponent<UIButton>();
@@ -37,9 +39,13 @@ public class TaskUI : MonoBehaviour {
         }
     }
     
-    void On_TaskUI_Close_Click()
+    public void Hide()
     {
         tween.PlayReverse();
+    }
+    void On_TaskUI_Close_Click()
+    {
+        Hide();
     }
     void OnTweenFinish()
     {

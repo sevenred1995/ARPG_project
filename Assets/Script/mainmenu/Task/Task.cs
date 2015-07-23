@@ -25,6 +25,9 @@ public class Task{
     private int idNpc;
     private int idTranscript;
     private TaskProgress taskProgress = TaskProgress.NoStart;
+    public delegate void OnTaskChangeEvent();
+    public event OnTaskChangeEvent OnTaskChanged;
+
     #region getset
     public int Id
     {
@@ -87,7 +90,14 @@ public class Task{
     public TaskProgress TaskProgress
     {
         get { return taskProgress; }
-        set { taskProgress = value; }
+        set 
+        {
+            if(taskProgress!=value)
+            {
+                taskProgress = value;
+                OnTaskChanged();
+            }   
+        }
     }
     #endregion 
 
