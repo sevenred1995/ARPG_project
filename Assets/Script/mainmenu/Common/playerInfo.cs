@@ -214,16 +214,16 @@ public class playerInfo : MonoBehaviour {
     }
     void Init()
     {
-        this.Coin = 9999;
+        this.Coin = 30000;
         this.Diamond = 233;
         this.Energy = 100;
         this.Exp = 1000;
-        this.Level = 11;
+        this.Level = 5;
         this.Energy = 89;
         this.Toughen = 30;
         this.HeadPortrait = "头像底板女性";
         this.Name = "lqhhh";
-         
+        this.playerType = PlayerType.Warrior;
         //穿戴装备初始化
         //this.HelmID = 1001;
         //this.ClothID = 1002;
@@ -450,11 +450,11 @@ public class playerInfo : MonoBehaviour {
         //使用效果
         if(it.Inventory.InventoryTYPE==InventoryType.Drug)
         {
-
+            //TODO
         }
         else if(it.Inventory.InventoryTYPE==InventoryType.Box)
         {
-
+            //TODO
         }
         //物品减少
         it.Count -= count;

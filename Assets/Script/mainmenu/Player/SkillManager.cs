@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SkillManager : MonoBehaviour {
+
+    public static SkillManager _instance;
     public TextAsset skilltext;
     private List<Skill> skillListInfo = new List<Skill>();
 
     void Awake()
     {
+        _instance = this;
         InitSkillList();
     }
-    public void InitSkillList()
+    void InitSkillList()
     {
         string str = skilltext.ToString();
         string[] skillArray = str.Split('\n');
@@ -56,6 +59,18 @@ public class SkillManager : MonoBehaviour {
             }
             skill.ColdTime = int.Parse(proArray[6]);
             skill.Damage = int.Parse(proArray[7]);
+            skillListInfo.Add(skill);
         }
+    }
+    public Skill GetSkillByPos(PosType pos)
+    {
+        foreach(Skill skill in skillListInfo)
+        {
+            if (skill.Postype == pos && skill.PlayerType == playerInfo._instance.PlayerType)
+            {
+                return skill;
+            }
+        }
+        return null;
     }
 }

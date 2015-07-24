@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour {
     private Animator playeranim;
     private NavMeshAgent agent;
 
-    private float minDistance = 10f;
+    private float minDistance = 5f;
 
     public GameObject transcriptGo;
     void Awake()
@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour {
         {
             rigidbody.velocity = Vector3.zero;
         }
-        if(rigidbody.velocity.magnitude>1f)
+        if(rigidbody.velocity.magnitude>0.05f)
         {
             agent.enabled = false;
             transform.rotation = Quaternion.LookRotation(new Vector3(-h, 0, -v));
