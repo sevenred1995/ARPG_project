@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 1e544af8ae125b24aad4d2e89a3c6527, type: 2}
   mSprites:
   - name: icon_li
-    x: 0
-    y: 637
+    x: 1025
+    y: 1452
     width: 156
     height: 156
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: icon_up
-    x: 0
-    y: 480
+    x: 1256
+    y: 1892
     width: 156
     height: 156
     borderLeft: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: icon_zhu
-    x: 0
-    y: 794
+    x: 1025
+    y: 1818
     width: 230
     height: 230
     borderLeft: 0
@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: iocn_fo
-    x: 157
-    y: 637
+    x: 1256
+    y: 1735
     width: 156
     height: 156
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: iocn_ho
-    x: 231
-    y: 868
+    x: 1256
+    y: 1578
     width: 156
     height: 156
     borderLeft: 0
@@ -107,10 +107,62 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: iocn_yi
-    x: 314
-    y: 637
+    x: 1256
+    y: 1421
     width: 156
     height: 156
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u6280\u80FD2"
+    x: 1413
+    y: 1905
+    width: 143
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u6280\u80FD3"
+    x: 1025
+    y: 1609
+    width: 208
+    height: 208
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u6280\u80FD\u56FE\u6807 1"
+    x: 1557
+    y: 1905
+    width: 142
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "\u6280\u80FD\u7CFB\u7EDF\u80CC\u666F"
+    x: 0
+    y: 1344
+    width: 1024
+    height: 704
     borderLeft: 0
     borderRight: 0
     borderTop: 0
