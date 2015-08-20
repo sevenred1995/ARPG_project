@@ -27,4 +27,5 @@ public class NpcManager : MonoBehaviour {
         npcDic.TryGetValue(id, out go);
         return go;
     }
+
 }
