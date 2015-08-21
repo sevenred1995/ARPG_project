@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class CameraFllow : MonoBehaviour {
-    private GameObject player;
-    private Vector3 offset;
+    public GameObject player;
+    public Vector3 offset;
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        offset = new Vector3(0, 20f, 20f);
+        player = GameObject.FindGameObjectWithTag("Player").transform.Find("Bip01").gameObject;
+        //offset = new Vector3(0, 20f, 20f);
     }
     void Update()
     {
