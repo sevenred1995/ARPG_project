@@ -141,7 +141,7 @@ ModelImporter:
     3300000: MaskedOrcAxe
     4300000: MaskedOrc
     4300002: MaskedOrcAxe
-    7400000: Take 001
+    7400000: takedamage
     9500000: //RootNode
     11100000: //RootNode
     13700000: MaskedOrc
@@ -160,7 +160,167 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: takedamage
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: L-HandControl
+        weight: 1
+      - path: L-LegControl
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/L-thigh
+        weight: 1
+      - path: Main/Pelvis/L-thigh/L-knee
+        weight: 1
+      - path: Main/Pelvis/L-thigh/L-knee/L-foot
+        weight: 1
+      - path: Main/Pelvis/R-thigh
+        weight: 1
+      - path: Main/Pelvis/R-thigh/R-knee
+        weight: 1
+      - path: Main/Pelvis/R-thigh/R-knee/R-foot
+        weight: 1
+      - path: Main/Pelvis/Spine
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/Head
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm/L-hand
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm/L-hand/L-finger01
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm/L-hand/L-finger01/L-finger02
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm/L-hand/L-thumb01
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/L-upperarm/L-lowerarm/L-hand/L-thumb01/L-thumb02
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm/R-hand
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm/R-hand/R-finger01
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm/R-hand/R-finger01/R-finger02
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm/R-hand/R-thumb01
+        weight: 1
+      - path: Main/Pelvis/Spine/Shoulder/R-upperarm/R-lowerarm/R-hand/R-thumb01/R-thumb02
+        weight: 1
+      - path: MaskedOrc
+        weight: 1
+      - path: MaskedOrcRig
+        weight: 1
+      - path: MaskedOrcRigLLegPlatform
+        weight: 1
+      - path: MaskedOrcRigPelvis
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigLLeg1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigLLeg1/MaskedOrcRigLLeg2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigLLeg1/MaskedOrcRigLLeg2/MaskedOrcRigLLegAnkle
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigLLeg1/MaskedOrcRigLLeg2/MaskedOrcRigLLegAnkle/MaskedOrcRigLLegFoot1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigRLeg1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigRLeg1/MaskedOrcRigRLeg2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigRLeg1/MaskedOrcRigRLeg2/MaskedOrcRigRLegAnkle
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigRLeg1/MaskedOrcRigRLeg2/MaskedOrcRigRLegAnkle/MaskedOrcRigRLegFoot1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2/MaskedOrcRigLArmPalm
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2/MaskedOrcRigLArmPalm/MaskedOrcRigLArmFinger1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2/MaskedOrcRigLArmPalm/MaskedOrcRigLArmFinger1/MaskedOrcRigLArmFinger2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2/MaskedOrcRigLArmPalm/MaskedOrcRigLArmThumb1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigLArmCollarbone/MaskedOrcRigLArm1/MaskedOrcRigLArm2/MaskedOrcRigLArmPalm/MaskedOrcRigLArmThumb1/MaskedOrcRigLArmThumb2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigNeck
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigNeck/MaskedOrcRigHead
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigRArmFinger1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigRArmFinger1/MaskedOrcRigRArmFinger2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigRArmThumb1
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigRArmThumb1/MaskedOrcRigRArmThumb2
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigWeapon
+        weight: 1
+      - path: MaskedOrcRigPelvis/MaskedOrcRigSpine1/MaskedOrcRigSpine2/MaskedOrcRigSpine3/MaskedOrcRigRigcage/MaskedOrcRigRArmCollarbone/MaskedOrcRigRArm1/MaskedOrcRigRArm2/MaskedOrcRigRArmPalm/MaskedOrcRigWeapon/MaskedOrcAxe
+        weight: 1
+      - path: MaskedOrcRigRLegPlatform
+        weight: 1
+      - path: R-HandControl
+        weight: 1
+      - path: R-LegControl
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -267,6 +267,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400034}
   - 137: {fileID: 13700000}
+  - 33: {fileID: 3300000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: FlowerMonster
   m_TagString: Untagged
@@ -619,7 +621,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.5900002, y: 2.7650001, z: 5.25}
+  m_LocalPosition: {x: -11.5900002, y: 3.09899998, z: 2.99000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400034}
@@ -927,6 +929,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400018}
   m_RootOrder: 8
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Mesh: {fileID: 4300002, guid: ae399532ad0e2c348a581b8ea4ee42d6, type: 3}
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -935,13 +944,13 @@ Animation:
   m_GameObject: {fileID: 100018}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 822afce55ca9ac84eb855c97c10f9aeb, type: 3}
+  m_Animation: {fileID: 7400000, guid: cd84299d35e51f1449d0745c1ae530ca, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 2e0f0ff56efedc743bd598627d14ac47, type: 3}
-  - {fileID: 7400000, guid: 822afce55ca9ac84eb855c97c10f9aeb, type: 3}
-  - {fileID: 7400000, guid: 492d57fa725d2a140a04d699bab31076, type: 3}
-  - {fileID: 7400000, guid: 889924d5482c27c4f8fd5a59f4f8d5df, type: 3}
-  - {fileID: 7400000, guid: ee6c43afb3f99cb4aa72b5a23f2f3f73, type: 3}
+  - {fileID: 7400000, guid: 6eee69304461a8c4695936f72e321a3d, type: 2}
+  - {fileID: 7400000, guid: cd84299d35e51f1449d0745c1ae530ca, type: 2}
+  - {fileID: 7400000, guid: f8b0a58aa5863b840b4c26a6c13d554e, type: 2}
+  - {fileID: 7400000, guid: 198ff2a1ffc1e9b44a9be9abe8e87750, type: 2}
+  - {fileID: 7400000, guid: 72931987d8de331468c3dbc25171a3df, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -959,11 +968,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageEffectPrefab: {fileID: 100008, guid: 1eade989a94acff43aa1549fbdbb471e, type: 2}
   TotalHp: 200
+  speed: 2
   attackRate: 2
   attackDistance: 1.5
+  attack: 10
   downSpeed: 1.5
-  downDistance: 4
-  speed: .600000024
+  downDistance: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd71dcb0056342b08cb3e8851fac00b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  minSpeed: 1
+  maxSpeed: 5
+  minRotationSpeed: 90
+  maxRotationSpeed: 360
+  fadeWaitTime: .5
+  fadeTime: 2
+  useGravity: 0
+  colliderThickness: .125
+  useNormals: 0
+  useMeshBoundsCenter: 0
+  allowShadows: 0
+  shadersAlreadyHandleTransparency: 0
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

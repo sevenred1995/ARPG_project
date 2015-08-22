@@ -12,7 +12,7 @@ public class PlayerAttackEffect : MonoBehaviour {
         if (transform.Find("EffectOffset"))
         effectOffset = transform.Find("EffectOffset").gameObject;
     }
-
+    
     public void ShowEffect()
     {
         if(effectOffset!=null)

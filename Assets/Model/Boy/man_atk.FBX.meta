@@ -309,7 +309,14 @@ ModelImporter:
       events:
       - time: .530173421
         functionName: Attack
-        data: normal,attackEffect1,attack1,1,0
+        data: normal,attackEffect1,,1,0
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .263009727
+        functionName: PlayAudio
+        data: attack1
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0

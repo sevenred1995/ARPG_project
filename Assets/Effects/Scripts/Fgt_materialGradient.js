@@ -22,9 +22,3 @@ curColor=Gradient.Evaluate(time);
 renderer.material.SetColor ("_TintColor", curColor);
 }
 
-function OnEnable()
-{
-    time=0;
-    animation.Play();
-}
-

@@ -108,6 +108,5 @@ public class UIFollowTarget : MonoBehaviour
 	/// <summary>
 	/// Custom update function.
 	/// </summary>
-
 	protected virtual void OnUpdate (bool isVisible) { }
 }

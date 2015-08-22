@@ -4,26 +4,33 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
     public GameObject damageEffectPrefab;
     public int TotalHp = 200;
-
+  
+    public float speed = 2;
     public float attackRate = 2;//表示的是敌人的攻击速度
     public float attackDistance = 1;
-    private float distance = 0;
-    private float attackTimer = 0;
+    public float attack;//敌人的攻击力
 
-    //死亡后下落的速度；
-    public float downSpeed = 1.5f;
+    private float attackTimer = 0;//攻击计时器
+    private float distance = 0;//当前与player的距离
+    private int hp;//保存当前血量
+
+    //死亡后；
+    public float downSpeed = 2.0f;
     public float downDistance = 4;
 
     private Transform bloodPoint;
     private Transform hpPoint;
     private CharacterController cc;
-
     private GameObject hpBar;
+    private GameObject damageHudText;
 
-    private int hp;
+    private UISlider hpSlider;
+    private HUDText hudText;
+    private MeshExploder me;
+ 
 
-    public float speed = 2;
-    void Awake()
+    
+    void Start()
     {
         bloodPoint = transform.Find("BloodPoint").transform;
         hpPoint = transform.Find("HpPoint").transform;
@@ -32,12 +39,17 @@ public class Enemy : MonoBehaviour {
         attackTimer = attackRate;
         hp = TotalHp;
         hpBar = HpBarManager._instance.GetHpBar(hpPoint.gameObject);
+        damageHudText = HpBarManager._instance.GetHudText(hpPoint.gameObject);
+
+        hpSlider = hpBar.GetComponentInChildren<UISlider>();
+        hudText = damageHudText.GetComponent<HUDText>();
+        me = gameObject.GetComponentInChildren<MeshExploder>();
     }
     void Update()
     {
         if (hp <= 0)
         {
-            if (downDistance < downSpeed * Time.deltaTime)
+            if (downSpeed * Time.deltaTime*100>=downDistance)
             {
                 Destroy(this.gameObject);
             }
@@ -49,17 +61,16 @@ public class Enemy : MonoBehaviour {
             attackTimer += Time.deltaTime;
             if(attackTimer>=attackRate)
             {
-                if(!animation.IsPlaying("takedamage"))
-                {
+               // if(!animation.IsPlaying("takedamage"))
+               // {
                     //面向主角
                     Transform player = TranscriptManager._instance.player.transform;
                     Vector3 targetPos = player.position;
                     targetPos.y = transform.position.y;
                     transform.LookAt(targetPos);
-
                     animation.Play("attack01");
                     attackTimer = 0;
-                }
+                //}
             }
             if(!animation.IsPlaying("attack01"))
             {
@@ -85,6 +96,11 @@ public class Enemy : MonoBehaviour {
         transform.LookAt(targetPos);
         cc.SimpleMove(transform.forward * speed);
     }
+
+    void Attack()
+    {
+        TranscriptManager._instance.player.transform.SendMessage("TakeDamageByEnemy",attack,SendMessageOptions.DontRequireReceiver);
+    }
     //0受到多少伤害
     //1 后退距离
     //3 浮空高度
@@ -98,12 +114,14 @@ public class Enemy : MonoBehaviour {
         int damage = int.Parse(proArray[0]);
         hp -= damage;
         //血量显示
-        hpBar.GetComponentInChildren<UISlider>().value=(float)hp/TotalHp;
+        hpSlider.value=(float)hp/TotalHp;
+        //伤害显示
+        hudText.Add("-" + damage, Color.red, 0.2f);
         //播放攻击动画
         animation.Play("takedamage");
 
         float backdistance = float.Parse(proArray[1]);
-        float jumpHeight = float.Parse(proArray[2]);
+        float jumpHeight =0;
 
         iTween.MoveBy(this.gameObject,
             transform.InverseTransformDirection(TranscriptManager._instance.player.transform.forward) * backdistance + Vector3.up * jumpHeight,
@@ -117,11 +135,23 @@ public class Enemy : MonoBehaviour {
     }
     void Dead()
     {
-        animation.Play("die");
-        TranscriptManager._instance.enemyList.Remove(this.gameObject);
+
+        cc.enabled = false;
         Destroy(hpBar);
-        Destroy(this.GetComponent<CharacterController>());
+        Destroy(damageHudText);
+        TranscriptManager._instance.enemyList.Remove(this.gameObject);
+        int randomNum = Random.Range(0, 10);
+        if(randomNum<5)
+        {
+            //播放死亡动画
+             animation.Play("die");
+             downSpeed = 0.3f;
+        }
+        else
+        {
+            //死亡碎片
+            downSpeed = 10.0f;
+            me.Explode();
+        }
     }
-
-
 }

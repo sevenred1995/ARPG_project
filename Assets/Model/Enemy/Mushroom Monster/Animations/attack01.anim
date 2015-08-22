@@ -1,0 +1,4760 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack01
+  serializedVersion: 4
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 130
+      - time: 1
+        value: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 88
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRig
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .459420234, y: -.537525117, z: -.459419996, w: .537524939}
+        inSlope: {x: -.0362053476, y: -.0308758002, z: .0362044536, w: .0308758002}
+        outSlope: {x: -.0362053476, y: -.0308758002, z: .0362044536, w: .0308758002}
+        tangentMode: 130
+      - time: .300000012
+        value: {x: .416215748, y: -.571633339, z: -.41621542, w: .57163322}
+        inSlope: {x: -.0713369325, y: -.0521510877, z: .0713369325, w: .0521510877}
+        outSlope: {x: -.0713369325, y: -.0521510877, z: .0713369325, w: .0521510877}
+        tangentMode: 20
+      - time: .366666675
+        value: {x: .440543115, y: -.553102136, z: -.440542817, w: .553102016}
+        inSlope: {x: 1.24362075, y: 1.05622733, z: -1.24362254, w: -1.05622828}
+        outSlope: {x: 1.24362075, y: 1.05622733, z: -1.24362254, w: -1.05622828}
+        tangentMode: 23
+      - time: .400000036
+        value: {x: .497840583, y: -.502150297, z: -.497840405, w: .502150118}
+        inSlope: {x: 1.76954472, y: 1.79158449, z: -1.76954746, w: -1.79158723}
+        outSlope: {x: 1.76954472, y: 1.79158449, z: -1.76954746, w: -1.79158723}
+        tangentMode: 11
+      - time: .433333367
+        value: {x: .558512807, y: -.43366313, z: -.558512688, w: .433662832}
+        inSlope: {x: 1.56515574, y: 1.9726491, z: -1.56515765, w: -1.97265267}
+        outSlope: {x: 1.56515574, y: 1.9726491, z: -1.56515765, w: -1.97265267}
+        tangentMode: 137
+      - time: .466666698
+        value: {x: .602184296, y: -.370640367, z: -.602184236, w: .37063995}
+        inSlope: {x: .898573399, y: 1.36190009, z: -.898575187, w: -1.36190057}
+        outSlope: {x: .898573399, y: 1.36190009, z: -.898575187, w: -1.36190057}
+        tangentMode: 122
+      - time: .533333361
+        value: {x: .61841768, y: -.342869818, z: -.61841768, w: .34286949}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 49
+      - time: .666666687
+        value: {x: .61841768, y: -.342869818, z: -.61841768, w: .34286949}
+        inSlope: {x: -.0519230515, y: -.0925562531, z: .0519230515, w: .092554912}
+        outSlope: {x: -.0519230515, y: -.0925562531, z: .0519230515, w: .092554912}
+        tangentMode: 149
+      - time: .833333373
+        value: {x: .547637045, y: -.447318614, z: -.547636926, w: .447318316}
+        inSlope: {x: -.709387064, y: -.868480086, z: .709388852, w: .868481457}
+        outSlope: {x: -.709387064, y: -.868480086, z: .709388852, w: .868481457}
+        tangentMode: 59
+      - time: .966666698
+        value: {x: .464775443, y: -.532901466, z: -.464775234, w: .532901287}
+        inSlope: {x: -.294819295, y: -.261614859, z: .294819772, w: .261614859}
+        outSlope: {x: -.294819295, y: -.261614859, z: .294819772, w: .261614859}
+        tangentMode: 129
+      - time: 1
+        value: {x: .459420234, y: -.537525117, z: -.459419996, w: .537524939}
+        inSlope: {x: -.160656422, y: -.138709679, z: .160657316, w: .138709679}
+        outSlope: {x: -.160656422, y: -.138709679, z: .160657316, w: .138709679}
+        tangentMode: 88
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 2.35554265e-09, y: -2.89054213e-07, z: -.0381050669, w: .999273777}
+        inSlope: {x: .00566650182, y: .0363860503, z: .10975498, w: .00396072865}
+        outSlope: {x: .00566650182, y: .0363860503, z: .10975498, w: .00396072865}
+        tangentMode: 1071681631
+      - time: .233333349
+        value: {x: .00492894277, y: .037202809, z: .0633535013, w: .997285306}
+        inSlope: {x: .0213881601, y: .204010636, z: .475943863, w: -.0371646918}
+        outSlope: {x: .0213881601, y: .204010636, z: .475943863, w: -.0371646918}
+        tangentMode: 1072059761
+      - time: .300000012
+        value: {x: .00605466589, y: .0491527393, z: .0877233297, w: .994913042}
+        inSlope: {x: .0123204766, y: .142118752, z: .217186645, w: -.0255292691}
+        outSlope: {x: .0123204766, y: .142118752, z: .217186645, w: -.0255292691}
+        tangentMode: 1072058304
+      - time: .366666675
+        value: {x: .00734195067, y: .0567560755, z: .0676300675, w: .996067822}
+        inSlope: {x: .0477969795, y: .113611341, z: -1.27072895, w: .0566759482}
+        outSlope: {x: .0477969795, y: .113611341, z: -1.27072895, w: .0566759482}
+        tangentMode: 1069995410
+      - time: .433333367
+        value: {x: .012687969, y: .0646432787, z: -.0624150857, w: .995873809}
+        inSlope: {x: .0934711322, y: .118206248, z: -1.86887527, w: -.111933962}
+        outSlope: {x: .0934711322, y: .118206248, z: -1.86887527, w: -.111933962}
+        tangentMode: 1072255036
+      - time: .5
+        value: {x: .0178271234, y: .0733609125, z: -.138204783, w: .987522066}
+        inSlope: {x: .0446710885, y: .148253515, z: -.303068906, w: -.0508010797}
+        outSlope: {x: .0446710885, y: .148253515, z: -.303068906, w: -.0508010797}
+        tangentMode: 1072357306
+      - time: .566666722
+        value: {x: .0195972528, y: .0830319822, z: -.136649683, w: .986938953}
+        inSlope: {x: .0214871764, y: .121871747, z: .017488895, w: -.00819683075}
+        outSlope: {x: .0214871764, y: .121871747, z: .017488895, w: -.00819683075}
+        tangentMode: 1071534821
+      - time: .76666671
+        value: {x: .0157306939, y: .0713445544, z: -.118196569, w: .990298986}
+        inSlope: {x: -.0848640054, y: -.323518693, z: .320988953, w: .0621351078}
+        outSlope: {x: -.0848640054, y: -.323518693, z: .320988953, w: .0621351078}
+        tangentMode: 1071325915
+      - time: 1
+        value: {x: 2.35554265e-09, y: -2.89054213e-07, z: -.0381050669, w: .999273777}
+        inSlope: {x: -.0137183079, y: -.0798484311, z: .098758027, w: .0040394105}
+        outSlope: {x: -.0137183079, y: -.0798484311, z: .098758027, w: .0040394105}
+        tangentMode: 1072064600
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.48328985e-08, y: 2.10336395e-07, z: -.00797185395, w: .999968231}
+        inSlope: {x: .00736467261, y: -.0135468552, z: -.0710113421, w: -.000654458941}
+        outSlope: {x: .00736467261, y: -.0135468552, z: -.0710113421, w: -.000654458941}
+        tangentMode: 1065353216
+      - time: .300000012
+        value: {x: .0127245095, y: -.0083977785, z: -.0796357691, w: .996707439}
+        inSlope: {x: .0477546826, y: .056526985, z: -.0499025024, w: -.00404924201}
+        outSlope: {x: .0477546826, y: .056526985, z: -.0499025024, w: -.00404924201}
+        tangentMode: 0
+      - time: .366666675
+        value: {x: .013215268, y: -.00113676977, z: -.0510218628, w: .998609483}
+        inSlope: {x: -.0884676427, y: .171768814, z: 1.37272489, w: .0470763296}
+        outSlope: {x: -.0884676427, y: .171768814, z: 1.37272489, w: .0470763296}
+        tangentMode: 1065353216
+      - time: .433333367
+        value: {x: .000215957771, y: .0137211895, z: .084511362, w: .996328056}
+        inSlope: {x: -.246820688, y: .240915626, z: 1.93068075, w: -.151987389}
+        outSlope: {x: -.246820688, y: .240915626, z: 1.93068075, w: -.151987389}
+        tangentMode: 0
+      - time: .5
+        value: {x: -.0135338772, y: .0283451267, z: .163521752, w: .986039579}
+        inSlope: {x: -.113691412, y: .179184198, z: .345264763, w: -.0597015508}
+        outSlope: {x: -.113691412, y: .179184198, z: .345264763, w: -.0597015508}
+        tangentMode: 1065353216
+      - time: .566666722
+        value: {x: -.0178167447, y: .0383240953, z: .164256454, w: .985511899}
+        inSlope: {x: -.0543979891, y: .125325143, z: .00626407471, w: -.00682890415}
+        outSlope: {x: -.0543979891, y: .125325143, z: .00626407471, w: -.00682890415}
+        tangentMode: 0
+      - time: .76666671
+        value: {x: -.011001938, y: .0342922732, z: .132341936, w: .990549684}
+        inSlope: {x: .145278662, y: -.185001358, z: -.581957281, w: .0842731446}
+        outSlope: {x: .145278662, y: -.185001358, z: -.581957281, w: .0842731446}
+        tangentMode: 0
+      - time: .966666698
+        value: {x: .000386643776, y: .00102375215, z: -.00240892242, w: .999996543}
+        inSlope: {x: -.0167849939, y: -.0583172813, z: -.307363629, w: .000821650785}
+        outSlope: {x: -.0167849939, y: -.0583172813, z: -.307363629, w: .000821650785}
+        tangentMode: 129
+      - time: 1
+        value: {x: -1.48328985e-08, y: 2.10336395e-07, z: -.00797185395, w: .999968231}
+        inSlope: {x: -.0115997698, y: -.0307062827, z: -.166888103, w: -.000849367003}
+        outSlope: {x: -.0115997698, y: -.0307062827, z: -.166888103, w: -.000849367003}
+        tangentMode: 88
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.06554827e-08, y: -8.53036966e-08, z: -.572774053, w: .819713295}
+        inSlope: {x: 3.67469084e-07, y: -4.17706161e-07, z: .083572261, w: .0581860505}
+        outSlope: {x: 3.67469084e-07, y: -4.17706161e-07, z: .083572261, w: .0581860505}
+        tangentMode: 1065353216
+      - time: .266666681
+        value: {x: 3.30281615e-08, y: -1.41286037e-07, z: -.480533183, w: .87697655}
+        inSlope: {x: -3.67411701e-07, y: 2.97414601e-07, z: .299449444, w: .164932624}
+        outSlope: {x: -3.67411701e-07, y: 2.97414601e-07, z: .299449444, w: .164932624}
+        tangentMode: 0
+      - time: .366666675
+        value: {x: .00221591117, y: .000792929903, z: -.489423931, w: .872042835}
+        inSlope: {x: .114518419, y: .0340929404, z: -.999097705, w: -.582199931}
+        outSlope: {x: .114518419, y: .0340929404, z: -.999097705, w: -.582199931}
+        tangentMode: 1065353216
+      - time: .433333367
+        value: {x: .014295293, y: .00326490519, z: -.589611828, w: .807553649}
+        inSlope: {x: .18519555, y: .0174295679, z: -1.44816327, w: -1.04894495}
+        outSlope: {x: .18519555, y: .0174295679, z: -1.44816327, w: -1.04894495}
+        tangentMode: 0
+      - time: .5
+        value: {x: .0223809648, y: .00332454778, z: -.650060296, w: .759545684}
+        inSlope: {x: .0360003076, y: -.00165298628, z: -.262069046, w: -.220149666}
+        outSlope: {x: .0360003076, y: -.00165298628, z: -.262069046, w: -.220149666}
+        tangentMode: 1065353216
+      - time: .566666722
+        value: {x: .0223809835, y: .00332452473, z: -.650060356, w: .759545624}
+        inSlope: {x: -5.02914872e-07, y: 2.82890056e-07, z: 0, w: 0}
+        outSlope: {x: -5.02914872e-07, y: 2.82890056e-07, z: 0, w: 0}
+        tangentMode: 0
+      - time: .76666671
+        value: {x: .017488867, y: .00297644106, z: -.633867741, w: .773238063}
+        inSlope: {x: -.0840154439, y: -.00795805827, z: .281612933, w: .232201323}
+        outSlope: {x: -.0840154439, y: -.00795805827, z: .281612933, w: .232201323}
+        tangentMode: 0
+      - time: 1
+        value: {x: -2.06554827e-08, y: -8.53036966e-08, z: -.572774053, w: .819713295}
+        inSlope: {x: -.0184544642, y: -.00456263032, z: .0672394708, w: .0471282452}
+        outSlope: {x: -.0184544642, y: -.00456263032, z: .0672394708, w: .0471282452}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.55969574e-08, y: -1.20483421e-07, z: -.728815258, w: .684710443}
+        inSlope: {x: 4.02215733e-07, y: -3.3164892e-07, z: -.149801359, w: -.160626754}
+        outSlope: {x: 4.02215733e-07, y: -3.3164892e-07, z: -.149801359, w: -.160626754}
+        tangentMode: -1090519039
+      - time: .100000009
+        value: {x: -1.88615008e-08, y: -1.27625327e-07, z: -.766304076, w: .642478168}
+        inSlope: {x: -8.4517211e-08, y: 2.5685587e-10, z: -.622478127, w: -.747199059}
+        outSlope: {x: -8.4517211e-08, y: 2.5685587e-10, z: -.622478127, w: -.747199059}
+        tangentMode: -1090519039
+      - time: .266666681
+        value: {x: 4.96650054e-09, y: -1.47395085e-07, z: -.867856503, w: .496815026}
+        inSlope: {x: -5.04292984e-07, y: 4.36749374e-08, z: -.369300872, w: -.638126194}
+        outSlope: {x: -5.04292984e-07, y: 4.36749374e-08, z: -.369300872, w: -.638126194}
+        tangentMode: -1107640254
+      - time: .333333343
+        value: {x: -3.81268812e-08, y: -1.09219911e-07, z: -.88104403, w: .473034322}
+        inSlope: {x: -.0460834764, y: -.0222264491, z: .191816404, w: .340282947}
+        outSlope: {x: -.0460834764, y: -.0222264491, z: .191816404, w: .340282947}
+        tangentMode: -1103078203
+      - time: .366666675
+        value: {x: -.00307226367, y: -.00148191652, z: -.864769518, w: .50215739}
+        inSlope: {x: -.149495661, y: -.08738745, z: .884474874, w: 1.4433316}
+        outSlope: {x: -.149495661, y: -.08738745, z: .884474874, w: 1.4433316}
+        tangentMode: -1102425946
+      - time: .400000036
+        value: {x: -.00996642187, y: -.00582594285, z: -.822079003, w: .569256485}
+        inSlope: {x: -.212616622, y: -.164006099, z: 1.50713897, w: 2.13541222}
+        outSlope: {x: -.212616622, y: -.164006099, z: 1.50713897, w: 2.13541222}
+        tangentMode: -1102850236
+      - time: .433333367
+        value: {x: -.0172467101, y: -.0124156596, z: -.764293551, w: .644518256}
+        inSlope: {x: -.186587989, y: -.197719321, z: 1.67328191, w: 2.00699973}
+        outSlope: {x: -.186587989, y: -.197719321, z: 1.67328191, w: 2.00699973}
+        tangentMode: -1104387913
+      - time: .466666698
+        value: {x: -.0224056207, y: -.0190072302, z: -.710526884, w: .703056455}
+        inSlope: {x: -.105554841, y: -.144291699, z: 1.16513944, w: 1.22641003}
+        outSlope: {x: -.105554841, y: -.144291699, z: 1.16513944, w: 1.22641003}
+        tangentMode: -1107066553
+      - time: .533333361
+        value: {x: -.0242545027, y: -.022017356, z: -.688682079, w: .724323094}
+        inSlope: {x: .00275468221, y: .00215618685, z: -.107136279, w: -.102134861}
+        outSlope: {x: .00275468221, y: .00215618685, z: -.107136279, w: -.102134861}
+        tangentMode: 1052431758
+      - time: .700000048
+        value: {x: -.0200725608, y: -.0181611143, z: -.713383734, w: .700250685}
+        inSlope: {x: .0610207394, y: .0569704622, z: -.0828668475, w: -.0812307}
+        outSlope: {x: .0610207394, y: .0569704622, z: -.0828668475, w: -.0812307}
+        tangentMode: 1048139860
+      - time: 1
+        value: {x: -2.55969574e-08, y: -1.20483421e-07, z: -.728815258, w: .684710443}
+        inSlope: {x: .0146132708, y: .0128945783, z: -.00756741269, w: -.00804127008}
+        outSlope: {x: .0146132708, y: .0128945783, z: -.00756741269, w: -.00804127008}
+        tangentMode: -1088211956
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 2.93709981e-08, y: 8.89772807e-08, z: .868577182, w: .495554}
+        inSlope: {x: 2.60121507e-08, y: -1.05828725e-07, z: .00841319561, w: -.0147575131}
+        outSlope: {x: 2.60121507e-08, y: -1.05828725e-07, z: .00841319561, w: -.0147575131}
+        tangentMode: 1065353216
+      - time: .300000012
+        value: {x: 7.44406634e-08, y: 1.13368678e-07, z: .903624654, w: .428325206}
+        inSlope: {x: 1.14065915e-06, y: 4.90228786e-07, z: .264258415, w: -.56005466}
+        outSlope: {x: 1.14065915e-06, y: 4.90228786e-07, z: .264258415, w: -.56005466}
+        tangentMode: 0
+      - time: .366666675
+        value: {x: -1.13087917e-09, y: 9.44814644e-08, z: .929757655, w: .368172228}
+        inSlope: {x: -9.53774133e-07, y: -1.84641578e-07, z: .593851566, w: -1.55549991}
+        outSlope: {x: -9.53774133e-07, y: -1.84641578e-07, z: .593851566, w: -1.55549991}
+        tangentMode: 1065353216
+      - time: .433333367
+        value: {x: -3.61106522e-08, y: 1.033263e-07, z: .972210467, w: .234108627}
+        inSlope: {x: 3.78130835e-07, y: 5.52343238e-08, z: .473829269, w: -1.90605295}
+        outSlope: {x: 3.78130835e-07, y: 5.52343238e-08, z: .473829269, w: -1.90605295}
+        tangentMode: 0
+      - time: .5
+        value: {x: 7.03098948e-08, y: 1.43870565e-07, z: .988108277, w: .153759867}
+        inSlope: {x: 1.55124056e-07, y: 3.96985541e-07, z: .058992561, w: -.35155344}
+        outSlope: {x: 1.55124056e-07, y: 3.96985541e-07, z: .058992561, w: -.35155344}
+        tangentMode: 1065353216
+      - time: .566666722
+        value: {x: 7.03098948e-08, y: 1.43870565e-07, z: .988108277, w: .153759867}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: .733333349
+        value: {x: 4.54128823e-09, y: 1.15799331e-07, z: .981579006, w: .191056818}
+        inSlope: {x: -2.6140151e-07, y: -9.74038485e-08, z: -.202731162, w: 1.00634456}
+        outSlope: {x: -2.6140151e-07, y: -9.74038485e-08, z: -.202731162, w: 1.00634456}
+        tangentMode: 1065353216
+      - time: .866666734
+        value: {x: 9.5892414e-09, y: 9.61483053e-08, z: .924791515, w: .380474359}
+        inSlope: {x: 4.1490199e-07, y: -3.98130169e-08, z: -.58674401, w: 1.43505907}
+        outSlope: {x: 4.1490199e-07, y: -3.98130169e-08, z: -.58674401, w: 1.43505907}
+        tangentMode: -1118524092
+      - time: .966666698
+        value: {x: 5.82385908e-08, y: 1.05924357e-07, z: .873583972, w: .486673445}
+        inSlope: {x: -5.53996756e-07, y: -3.41944173e-07, z: -.272066563, w: .498561025}
+        outSlope: {x: -5.53996756e-07, y: -3.41944173e-07, z: -.272066563, w: .498561025}
+        tangentMode: -1090166630
+      - time: 1
+        value: {x: 2.93709981e-08, y: 8.89772807e-08, z: .868577182, w: .495554}
+        inSlope: {x: -8.66028586e-07, y: -5.08412768e-07, z: -.150203854, w: .266416937}
+        outSlope: {x: -8.66028586e-07, y: -5.08412768e-07, z: -.150203854, w: .266416937}
+        tangentMode: -1088211956
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.09498835e-07, y: 1.55052106e-07, z: .820408881, w: .571777284}
+        inSlope: {x: -3.03802835e-07, y: -2.50004382e-06, z: -.0823420212, w: .117548697}
+        outSlope: {x: -3.03802835e-07, y: -2.50004382e-06, z: -.0823420212, w: .117548697}
+        tangentMode: 1065353217
+      - time: .166666672
+        value: {x: 9.34567126e-08, y: 1.40480864e-07, z: .768629313, w: .639694452}
+        inSlope: {x: -3.35574725e-07, y: -1.08757274e-06, z: -.485232115, w: .583035231}
+        outSlope: {x: -3.35574725e-07, y: -1.08757274e-06, z: -.485232115, w: .583035231}
+        tangentMode: 904921089
+      - time: .333333343
+        value: {x: 6.70462867e-08, y: 4.82608691e-08, z: .711243451, w: .702945769}
+        inSlope: {x: -4.48355308e-08, y: -3.98305701e-07, z: .104121581, w: -.107430533}
+        outSlope: {x: -4.48355308e-08, y: -3.98305701e-07, z: .104121581, w: -.107430533}
+        tangentMode: 0
+      - time: .433333367
+        value: {x: 5.19800203e-08, y: 5.37616991e-08, z: .77278626, w: .634666383}
+        inSlope: {x: -5.78401568e-07, y: 1.19481342e-07, z: .737766683, w: -.892110825}
+        outSlope: {x: -5.78401568e-07, y: 1.19481342e-07, z: .737766683, w: -.892110825}
+        tangentMode: 0
+      - time: .5
+        value: {x: 9.3779299e-08, y: 1.37531089e-07, z: .803511083, w: .595289826}
+        inSlope: {x: -5.24050634e-08, y: -2.95360394e-07, z: .133087769, w: -.176896319}
+        outSlope: {x: -5.24050634e-08, y: -2.95360394e-07, z: .133087769, w: -.176896319}
+        tangentMode: 1065353216
+      - time: .633333385
+        value: {x: 9.3779299e-08, y: 1.37531089e-07, z: .803511083, w: .595289826}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1
+        value: {x: 1.09498835e-07, y: 1.55052106e-07, z: .820408881, w: .571777284}
+        inSlope: {x: 9.94290986e-07, y: 9.66015591e-07, z: .0139135253, w: -.019946713}
+        outSlope: {x: 9.94290986e-07, y: 9.66015591e-07, z: .0139135253, w: -.019946713}
+        tangentMode: -1088211956
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRig
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.41966716e-09, y: .222920433, z: -.032479234}
+        inSlope: {x: -6.88811563e-10, y: .0125819594, z: -.0157581102}
+        outSlope: {x: -6.88811563e-10, y: .0125819594, z: -.0157581102}
+        tangentMode: 0
+      - time: .0666666701
+        value: {x: -1.5049475e-09, y: .224477932, z: -.0344302207}
+        inSlope: {x: -2.31238273e-09, y: .0422350392, z: -.0529015325}
+        outSlope: {x: -2.31239983e-09, y: .0422339812, z: -.0529021099}
+        tangentMode: 1024042168
+      - time: .300000012
+        value: {x: -2.21671015e-09, y: .237477005, z: -.0507134534}
+        inSlope: {x: -1.27919286e-09, y: .0233611483, z: -.0292655006}
+        outSlope: {x: -1.27918609e-09, y: .0233632494, z: -.0292650256}
+        tangentMode: 0
+      - time: .333333343
+        value: {x: -2.23967023e-09, y: .237896338, z: -.0512387156}
+        inSlope: {x: 1.15032339e-08, y: .00629247818, z: .263162851}
+        outSlope: {x: 1.15031309e-08, y: .00628948258, z: .263161778}
+        tangentMode: 0
+      - time: .366666675
+        value: {x: -1.44982915e-09, y: .237896338, z: -.0331692584}
+        inSlope: {x: 4.00994935e-08, y: -2.0434004e-06, z: .917369723}
+        outSlope: {x: 4.00994971e-08, y: 2.22044605e-15, z: .917369962}
+        tangentMode: 1023706212
+      - time: .400000006
+        value: {x: 4.33638847e-10, y: .237896338, z: .00991946645}
+        inSlope: {x: 6.19719245e-08, y: 9.51619811e-16, z: 1.41775262}
+        outSlope: {x: 6.19720382e-08, y: 2.22044605e-15, z: 1.41775489}
+        tangentMode: 0
+      - time: .433333337
+        value: {x: 2.68164935e-09, y: .237896338, z: .0613479502}
+        inSlope: {x: 6.197196e-08, y: 9.51619811e-16, z: 1.4177531}
+        outSlope: {x: 6.19719955e-08, y: 2.22044605e-15, z: 1.41775513}
+        tangentMode: 0
+      - time: .466666669
+        value: {x: 4.56511762e-09, y: .237896338, z: .104436681}
+        inSlope: {x: 4.00994153e-08, y: 9.51619811e-16, z: .917368293}
+        outSlope: {x: 4.00995432e-08, y: 2.22044605e-15, z: .917371869}
+        tangentMode: 1023582660
+      - time: .5
+        value: {x: 5.35495914e-09, y: .237896338, z: .122506149}
+        inSlope: {x: 1.18474723e-08, y: 9.51619811e-16, z: .271040887}
+        outSlope: {x: 1.18475594e-08, y: 2.22044414e-15, z: .271041512}
+        tangentMode: 0
+      - time: .533333361
+        value: {x: 5.35495914e-09, y: .237896338, z: .122506149}
+        inSlope: {x: 2.06542902e-14, y: 9.51618964e-16, z: -6.73117654e-07}
+        outSlope: {x: 6.61745121e-23, y: 2.22044817e-15, z: 3.33067225e-15}
+        tangentMode: 0
+      - time: .633333325
+        value: {x: 5.35495914e-09, y: .237896338, z: .122506149}
+        inSlope: {x: 2.83605056e-23, y: 9.51620658e-16, z: 1.42743104e-15}
+        outSlope: {x: -8.12896096e-14, y: 2.04339858e-06, z: -1.93997973e-09}
+        tangentMode: 0
+      - time: .699999988
+        value: {x: 5.16526999e-09, y: .237477005, z: .118166558}
+        inSlope: {x: -1.05684022e-08, y: -.0233632699, z: -.241776302}
+        outSlope: {x: -1.05683178e-08, y: -.023361126, z: -.241773903}
+        tangentMode: 0
+      - time: .866666675
+        value: {x: 9.65001523e-10, y: .228191957, z: .0220756233}
+        inSlope: {x: -2.88596631e-08, y: -.0637920275, z: -.660232127}
+        outSlope: {x: -2.88599669e-08, y: -.0637924969, z: -.66023916}
+        tangentMode: 1024033136
+      - time: .899999976
+        value: {x: 4.36521999e-11, y: .226155236, z: .000997609925}
+        inSlope: {x: -2.52017323e-08, y: -.0557080545, z: -.576548338}
+        outSlope: {x: -2.52013539e-08, y: -.0557107106, z: -.576539636}
+        tangentMode: 0
+      - time: .933333337
+        value: {x: -7.1510603e-10, y: .224477932, z: -.0163607541}
+        inSlope: {x: -1.91042684e-08, y: -.0422339439, z: -.437054425}
+        outSlope: {x: -1.91044709e-08, y: -.0422350839, z: -.437058806}
+        tangentMode: 0
+      - time: .966666639
+        value: {x: -1.22997768e-09, y: .223339766, z: -.0281396452}
+        inSlope: {x: -1.05684883e-08, y: -.023365939, z: -.241778508}
+        outSlope: {x: -1.05683418e-08, y: -.0233591404, z: -.241775379}
+        tangentMode: 0
+      - time: 1
+        value: {x: -1.41966716e-09, y: .222920433, z: -.032479234}
+        inSlope: {x: -5.69065328e-09, y: -.0125771808, z: -.130186722}
+        outSlope: {x: -5.69065328e-09, y: -.0125771808, z: -.130186722}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.25399667, y: 0, z: -9.09494681e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: -.25399667, y: 0, z: -9.09494681e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0146628572, y: .110572115, z: -2.00258814e-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: .0146628572, y: .110572115, z: -2.00258814e-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .092203021, y: .105587423, z: -1.39687835e-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1047457520
+      - time: 1
+        value: {x: .092203021, y: .105587423, z: -1.39687835e-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0683381557, y: .0248399731, z: -1.53605695e-09}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1276951563
+      - time: 1
+        value: {x: .0683381557, y: .0248399731, z: -1.53605695e-09}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1049542085
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.118990362, y: -9.53674295e-09, z: -4.54747341e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: -.118990362, y: -9.53674295e-09, z: -4.54747341e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRig
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .99999994, y: .99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: .99999994, y: .99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.00000036, y: 1.00000036, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: 1.00000036, y: 1.00000036, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: .99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .999999762, y: .99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1047457520
+      - time: 1
+        value: {x: .999999762, y: .99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1276951563
+      - time: 1
+        value: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1049542085
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .99999994, y: .999999821, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -1124274369
+      - time: 1
+        value: {x: .99999994, y: .999999821, z: 1.00000012}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1054204538
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 30
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: -.0169099569, y: .363202691, z: .0768221617}
+    m_Extent: {x: .357525587, y: .377092779, z: .602355897}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .50000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .50000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.50000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -.50000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.49999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -.49999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .49999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .49999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .459420234
+        inSlope: -.0362053476
+        outSlope: -.0362053476
+        tangentMode: 0
+      - time: .300000012
+        value: .416215748
+        inSlope: -.0713369325
+        outSlope: -.0713369325
+        tangentMode: 0
+      - time: .366666675
+        value: .440543115
+        inSlope: 1.24362075
+        outSlope: 1.24362075
+        tangentMode: 0
+      - time: .400000036
+        value: .497840583
+        inSlope: 1.76954472
+        outSlope: 1.76954472
+        tangentMode: 0
+      - time: .433333367
+        value: .558512807
+        inSlope: 1.56515574
+        outSlope: 1.56515574
+        tangentMode: 0
+      - time: .466666698
+        value: .602184296
+        inSlope: .898573399
+        outSlope: .898573399
+        tangentMode: 0
+      - time: .533333361
+        value: .61841768
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: .61841768
+        inSlope: -.0519230515
+        outSlope: -.0519230515
+        tangentMode: 0
+      - time: .833333373
+        value: .547637045
+        inSlope: -.709387064
+        outSlope: -.709387064
+        tangentMode: 0
+      - time: .966666698
+        value: .464775443
+        inSlope: -.294819295
+        outSlope: -.294819295
+        tangentMode: 0
+      - time: 1
+        value: .459420234
+        inSlope: -.160656422
+        outSlope: -.160656422
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.537525117
+        inSlope: -.0308758002
+        outSlope: -.0308758002
+        tangentMode: 0
+      - time: .300000012
+        value: -.571633339
+        inSlope: -.0521510877
+        outSlope: -.0521510877
+        tangentMode: 0
+      - time: .366666675
+        value: -.553102136
+        inSlope: 1.05622733
+        outSlope: 1.05622733
+        tangentMode: 0
+      - time: .400000036
+        value: -.502150297
+        inSlope: 1.79158449
+        outSlope: 1.79158449
+        tangentMode: 0
+      - time: .433333367
+        value: -.43366313
+        inSlope: 1.9726491
+        outSlope: 1.9726491
+        tangentMode: 0
+      - time: .466666698
+        value: -.370640367
+        inSlope: 1.36190009
+        outSlope: 1.36190009
+        tangentMode: 0
+      - time: .533333361
+        value: -.342869818
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: -.342869818
+        inSlope: -.0925562531
+        outSlope: -.0925562531
+        tangentMode: 0
+      - time: .833333373
+        value: -.447318614
+        inSlope: -.868480086
+        outSlope: -.868480086
+        tangentMode: 0
+      - time: .966666698
+        value: -.532901466
+        inSlope: -.261614859
+        outSlope: -.261614859
+        tangentMode: 0
+      - time: 1
+        value: -.537525117
+        inSlope: -.138709679
+        outSlope: -.138709679
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.459419996
+        inSlope: .0362044536
+        outSlope: .0362044536
+        tangentMode: 0
+      - time: .300000012
+        value: -.41621542
+        inSlope: .0713369325
+        outSlope: .0713369325
+        tangentMode: 0
+      - time: .366666675
+        value: -.440542817
+        inSlope: -1.24362254
+        outSlope: -1.24362254
+        tangentMode: 0
+      - time: .400000036
+        value: -.497840405
+        inSlope: -1.76954746
+        outSlope: -1.76954746
+        tangentMode: 0
+      - time: .433333367
+        value: -.558512688
+        inSlope: -1.56515765
+        outSlope: -1.56515765
+        tangentMode: 0
+      - time: .466666698
+        value: -.602184236
+        inSlope: -.898575187
+        outSlope: -.898575187
+        tangentMode: 0
+      - time: .533333361
+        value: -.61841768
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: -.61841768
+        inSlope: .0519230515
+        outSlope: .0519230515
+        tangentMode: 0
+      - time: .833333373
+        value: -.547636926
+        inSlope: .709388852
+        outSlope: .709388852
+        tangentMode: 0
+      - time: .966666698
+        value: -.464775234
+        inSlope: .294819772
+        outSlope: .294819772
+        tangentMode: 0
+      - time: 1
+        value: -.459419996
+        inSlope: .160657316
+        outSlope: .160657316
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .537524939
+        inSlope: .0308758002
+        outSlope: .0308758002
+        tangentMode: 0
+      - time: .300000012
+        value: .57163322
+        inSlope: .0521510877
+        outSlope: .0521510877
+        tangentMode: 0
+      - time: .366666675
+        value: .553102016
+        inSlope: -1.05622828
+        outSlope: -1.05622828
+        tangentMode: 0
+      - time: .400000036
+        value: .502150118
+        inSlope: -1.79158723
+        outSlope: -1.79158723
+        tangentMode: 0
+      - time: .433333367
+        value: .433662832
+        inSlope: -1.97265267
+        outSlope: -1.97265267
+        tangentMode: 0
+      - time: .466666698
+        value: .37063995
+        inSlope: -1.36190057
+        outSlope: -1.36190057
+        tangentMode: 0
+      - time: .533333361
+        value: .34286949
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: .34286949
+        inSlope: .092554912
+        outSlope: .092554912
+        tangentMode: 0
+      - time: .833333373
+        value: .447318316
+        inSlope: .868481457
+        outSlope: .868481457
+        tangentMode: 0
+      - time: .966666698
+        value: .532901287
+        inSlope: .261614859
+        outSlope: .261614859
+        tangentMode: 0
+      - time: 1
+        value: .537524939
+        inSlope: .138709679
+        outSlope: .138709679
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.35554265e-09
+        inSlope: .00566650182
+        outSlope: .00566650182
+        tangentMode: 0
+      - time: .233333349
+        value: .00492894277
+        inSlope: .0213881601
+        outSlope: .0213881601
+        tangentMode: 0
+      - time: .300000012
+        value: .00605466589
+        inSlope: .0123204766
+        outSlope: .0123204766
+        tangentMode: 0
+      - time: .366666675
+        value: .00734195067
+        inSlope: .0477969795
+        outSlope: .0477969795
+        tangentMode: 0
+      - time: .433333367
+        value: .012687969
+        inSlope: .0934711322
+        outSlope: .0934711322
+        tangentMode: 0
+      - time: .5
+        value: .0178271234
+        inSlope: .0446710885
+        outSlope: .0446710885
+        tangentMode: 0
+      - time: .566666722
+        value: .0195972528
+        inSlope: .0214871764
+        outSlope: .0214871764
+        tangentMode: 0
+      - time: .76666671
+        value: .0157306939
+        inSlope: -.0848640054
+        outSlope: -.0848640054
+        tangentMode: 0
+      - time: 1
+        value: 2.35554265e-09
+        inSlope: -.0137183079
+        outSlope: -.0137183079
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.89054213e-07
+        inSlope: .0363860503
+        outSlope: .0363860503
+        tangentMode: 0
+      - time: .233333349
+        value: .037202809
+        inSlope: .204010636
+        outSlope: .204010636
+        tangentMode: 0
+      - time: .300000012
+        value: .0491527393
+        inSlope: .142118752
+        outSlope: .142118752
+        tangentMode: 0
+      - time: .366666675
+        value: .0567560755
+        inSlope: .113611341
+        outSlope: .113611341
+        tangentMode: 0
+      - time: .433333367
+        value: .0646432787
+        inSlope: .118206248
+        outSlope: .118206248
+        tangentMode: 0
+      - time: .5
+        value: .0733609125
+        inSlope: .148253515
+        outSlope: .148253515
+        tangentMode: 0
+      - time: .566666722
+        value: .0830319822
+        inSlope: .121871747
+        outSlope: .121871747
+        tangentMode: 0
+      - time: .76666671
+        value: .0713445544
+        inSlope: -.323518693
+        outSlope: -.323518693
+        tangentMode: 0
+      - time: 1
+        value: -2.89054213e-07
+        inSlope: -.0798484311
+        outSlope: -.0798484311
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0381050669
+        inSlope: .10975498
+        outSlope: .10975498
+        tangentMode: 0
+      - time: .233333349
+        value: .0633535013
+        inSlope: .475943863
+        outSlope: .475943863
+        tangentMode: 0
+      - time: .300000012
+        value: .0877233297
+        inSlope: .217186645
+        outSlope: .217186645
+        tangentMode: 0
+      - time: .366666675
+        value: .0676300675
+        inSlope: -1.27072895
+        outSlope: -1.27072895
+        tangentMode: 0
+      - time: .433333367
+        value: -.0624150857
+        inSlope: -1.86887527
+        outSlope: -1.86887527
+        tangentMode: 0
+      - time: .5
+        value: -.138204783
+        inSlope: -.303068906
+        outSlope: -.303068906
+        tangentMode: 0
+      - time: .566666722
+        value: -.136649683
+        inSlope: .017488895
+        outSlope: .017488895
+        tangentMode: 0
+      - time: .76666671
+        value: -.118196569
+        inSlope: .320988953
+        outSlope: .320988953
+        tangentMode: 0
+      - time: 1
+        value: -.0381050669
+        inSlope: .098758027
+        outSlope: .098758027
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .999273777
+        inSlope: .00396072865
+        outSlope: .00396072865
+        tangentMode: 0
+      - time: .233333349
+        value: .997285306
+        inSlope: -.0371646918
+        outSlope: -.0371646918
+        tangentMode: 0
+      - time: .300000012
+        value: .994913042
+        inSlope: -.0255292691
+        outSlope: -.0255292691
+        tangentMode: 0
+      - time: .366666675
+        value: .996067822
+        inSlope: .0566759482
+        outSlope: .0566759482
+        tangentMode: 0
+      - time: .433333367
+        value: .995873809
+        inSlope: -.111933962
+        outSlope: -.111933962
+        tangentMode: 0
+      - time: .5
+        value: .987522066
+        inSlope: -.0508010797
+        outSlope: -.0508010797
+        tangentMode: 0
+      - time: .566666722
+        value: .986938953
+        inSlope: -.00819683075
+        outSlope: -.00819683075
+        tangentMode: 0
+      - time: .76666671
+        value: .990298986
+        inSlope: .0621351078
+        outSlope: .0621351078
+        tangentMode: 0
+      - time: 1
+        value: .999273777
+        inSlope: .0040394105
+        outSlope: .0040394105
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.48328985e-08
+        inSlope: .00736467261
+        outSlope: .00736467261
+        tangentMode: 0
+      - time: .300000012
+        value: .0127245095
+        inSlope: .0477546826
+        outSlope: .0477546826
+        tangentMode: 0
+      - time: .366666675
+        value: .013215268
+        inSlope: -.0884676427
+        outSlope: -.0884676427
+        tangentMode: 0
+      - time: .433333367
+        value: .000215957771
+        inSlope: -.246820688
+        outSlope: -.246820688
+        tangentMode: 0
+      - time: .5
+        value: -.0135338772
+        inSlope: -.113691412
+        outSlope: -.113691412
+        tangentMode: 0
+      - time: .566666722
+        value: -.0178167447
+        inSlope: -.0543979891
+        outSlope: -.0543979891
+        tangentMode: 0
+      - time: .76666671
+        value: -.011001938
+        inSlope: .145278662
+        outSlope: .145278662
+        tangentMode: 0
+      - time: .966666698
+        value: .000386643776
+        inSlope: -.0167849939
+        outSlope: -.0167849939
+        tangentMode: 0
+      - time: 1
+        value: -1.48328985e-08
+        inSlope: -.0115997698
+        outSlope: -.0115997698
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.10336395e-07
+        inSlope: -.0135468552
+        outSlope: -.0135468552
+        tangentMode: 0
+      - time: .300000012
+        value: -.0083977785
+        inSlope: .056526985
+        outSlope: .056526985
+        tangentMode: 0
+      - time: .366666675
+        value: -.00113676977
+        inSlope: .171768814
+        outSlope: .171768814
+        tangentMode: 0
+      - time: .433333367
+        value: .0137211895
+        inSlope: .240915626
+        outSlope: .240915626
+        tangentMode: 0
+      - time: .5
+        value: .0283451267
+        inSlope: .179184198
+        outSlope: .179184198
+        tangentMode: 0
+      - time: .566666722
+        value: .0383240953
+        inSlope: .125325143
+        outSlope: .125325143
+        tangentMode: 0
+      - time: .76666671
+        value: .0342922732
+        inSlope: -.185001358
+        outSlope: -.185001358
+        tangentMode: 0
+      - time: .966666698
+        value: .00102375215
+        inSlope: -.0583172813
+        outSlope: -.0583172813
+        tangentMode: 0
+      - time: 1
+        value: 2.10336395e-07
+        inSlope: -.0307062827
+        outSlope: -.0307062827
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.00797185395
+        inSlope: -.0710113421
+        outSlope: -.0710113421
+        tangentMode: 0
+      - time: .300000012
+        value: -.0796357691
+        inSlope: -.0499025024
+        outSlope: -.0499025024
+        tangentMode: 0
+      - time: .366666675
+        value: -.0510218628
+        inSlope: 1.37272489
+        outSlope: 1.37272489
+        tangentMode: 0
+      - time: .433333367
+        value: .084511362
+        inSlope: 1.93068075
+        outSlope: 1.93068075
+        tangentMode: 0
+      - time: .5
+        value: .163521752
+        inSlope: .345264763
+        outSlope: .345264763
+        tangentMode: 0
+      - time: .566666722
+        value: .164256454
+        inSlope: .00626407471
+        outSlope: .00626407471
+        tangentMode: 0
+      - time: .76666671
+        value: .132341936
+        inSlope: -.581957281
+        outSlope: -.581957281
+        tangentMode: 0
+      - time: .966666698
+        value: -.00240892242
+        inSlope: -.307363629
+        outSlope: -.307363629
+        tangentMode: 0
+      - time: 1
+        value: -.00797185395
+        inSlope: -.166888103
+        outSlope: -.166888103
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .999968231
+        inSlope: -.000654458941
+        outSlope: -.000654458941
+        tangentMode: 0
+      - time: .300000012
+        value: .996707439
+        inSlope: -.00404924201
+        outSlope: -.00404924201
+        tangentMode: 0
+      - time: .366666675
+        value: .998609483
+        inSlope: .0470763296
+        outSlope: .0470763296
+        tangentMode: 0
+      - time: .433333367
+        value: .996328056
+        inSlope: -.151987389
+        outSlope: -.151987389
+        tangentMode: 0
+      - time: .5
+        value: .986039579
+        inSlope: -.0597015508
+        outSlope: -.0597015508
+        tangentMode: 0
+      - time: .566666722
+        value: .985511899
+        inSlope: -.00682890415
+        outSlope: -.00682890415
+        tangentMode: 0
+      - time: .76666671
+        value: .990549684
+        inSlope: .0842731446
+        outSlope: .0842731446
+        tangentMode: 0
+      - time: .966666698
+        value: .999996543
+        inSlope: .000821650785
+        outSlope: .000821650785
+        tangentMode: 0
+      - time: 1
+        value: .999968231
+        inSlope: -.000849367003
+        outSlope: -.000849367003
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.06554827e-08
+        inSlope: 3.67469084e-07
+        outSlope: 3.67469084e-07
+        tangentMode: 0
+      - time: .266666681
+        value: 3.30281615e-08
+        inSlope: -3.67411701e-07
+        outSlope: -3.67411701e-07
+        tangentMode: 0
+      - time: .366666675
+        value: .00221591117
+        inSlope: .114518419
+        outSlope: .114518419
+        tangentMode: 0
+      - time: .433333367
+        value: .014295293
+        inSlope: .18519555
+        outSlope: .18519555
+        tangentMode: 0
+      - time: .5
+        value: .0223809648
+        inSlope: .0360003076
+        outSlope: .0360003076
+        tangentMode: 0
+      - time: .566666722
+        value: .0223809835
+        inSlope: -5.02914872e-07
+        outSlope: -5.02914872e-07
+        tangentMode: 0
+      - time: .76666671
+        value: .017488867
+        inSlope: -.0840154439
+        outSlope: -.0840154439
+        tangentMode: 0
+      - time: 1
+        value: -2.06554827e-08
+        inSlope: -.0184544642
+        outSlope: -.0184544642
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.53036966e-08
+        inSlope: -4.17706161e-07
+        outSlope: -4.17706161e-07
+        tangentMode: 0
+      - time: .266666681
+        value: -1.41286037e-07
+        inSlope: 2.97414601e-07
+        outSlope: 2.97414601e-07
+        tangentMode: 0
+      - time: .366666675
+        value: .000792929903
+        inSlope: .0340929404
+        outSlope: .0340929404
+        tangentMode: 0
+      - time: .433333367
+        value: .00326490519
+        inSlope: .0174295679
+        outSlope: .0174295679
+        tangentMode: 0
+      - time: .5
+        value: .00332454778
+        inSlope: -.00165298628
+        outSlope: -.00165298628
+        tangentMode: 0
+      - time: .566666722
+        value: .00332452473
+        inSlope: 2.82890056e-07
+        outSlope: 2.82890056e-07
+        tangentMode: 0
+      - time: .76666671
+        value: .00297644106
+        inSlope: -.00795805827
+        outSlope: -.00795805827
+        tangentMode: 0
+      - time: 1
+        value: -8.53036966e-08
+        inSlope: -.00456263032
+        outSlope: -.00456263032
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.572774053
+        inSlope: .083572261
+        outSlope: .083572261
+        tangentMode: 0
+      - time: .266666681
+        value: -.480533183
+        inSlope: .299449444
+        outSlope: .299449444
+        tangentMode: 0
+      - time: .366666675
+        value: -.489423931
+        inSlope: -.999097705
+        outSlope: -.999097705
+        tangentMode: 0
+      - time: .433333367
+        value: -.589611828
+        inSlope: -1.44816327
+        outSlope: -1.44816327
+        tangentMode: 0
+      - time: .5
+        value: -.650060296
+        inSlope: -.262069046
+        outSlope: -.262069046
+        tangentMode: 0
+      - time: .566666722
+        value: -.650060356
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .76666671
+        value: -.633867741
+        inSlope: .281612933
+        outSlope: .281612933
+        tangentMode: 0
+      - time: 1
+        value: -.572774053
+        inSlope: .0672394708
+        outSlope: .0672394708
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .819713295
+        inSlope: .0581860505
+        outSlope: .0581860505
+        tangentMode: 0
+      - time: .266666681
+        value: .87697655
+        inSlope: .164932624
+        outSlope: .164932624
+        tangentMode: 0
+      - time: .366666675
+        value: .872042835
+        inSlope: -.582199931
+        outSlope: -.582199931
+        tangentMode: 0
+      - time: .433333367
+        value: .807553649
+        inSlope: -1.04894495
+        outSlope: -1.04894495
+        tangentMode: 0
+      - time: .5
+        value: .759545684
+        inSlope: -.220149666
+        outSlope: -.220149666
+        tangentMode: 0
+      - time: .566666722
+        value: .759545624
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .76666671
+        value: .773238063
+        inSlope: .232201323
+        outSlope: .232201323
+        tangentMode: 0
+      - time: 1
+        value: .819713295
+        inSlope: .0471282452
+        outSlope: .0471282452
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.55969574e-08
+        inSlope: 4.02215733e-07
+        outSlope: 4.02215733e-07
+        tangentMode: 0
+      - time: .100000009
+        value: -1.88615008e-08
+        inSlope: -8.4517211e-08
+        outSlope: -8.4517211e-08
+        tangentMode: 0
+      - time: .266666681
+        value: 4.96650054e-09
+        inSlope: -5.04292984e-07
+        outSlope: -5.04292984e-07
+        tangentMode: 0
+      - time: .333333343
+        value: -3.81268812e-08
+        inSlope: -.0460834764
+        outSlope: -.0460834764
+        tangentMode: 0
+      - time: .366666675
+        value: -.00307226367
+        inSlope: -.149495661
+        outSlope: -.149495661
+        tangentMode: 0
+      - time: .400000036
+        value: -.00996642187
+        inSlope: -.212616622
+        outSlope: -.212616622
+        tangentMode: 0
+      - time: .433333367
+        value: -.0172467101
+        inSlope: -.186587989
+        outSlope: -.186587989
+        tangentMode: 0
+      - time: .466666698
+        value: -.0224056207
+        inSlope: -.105554841
+        outSlope: -.105554841
+        tangentMode: 0
+      - time: .533333361
+        value: -.0242545027
+        inSlope: .00275468221
+        outSlope: .00275468221
+        tangentMode: 0
+      - time: .700000048
+        value: -.0200725608
+        inSlope: .0610207394
+        outSlope: .0610207394
+        tangentMode: 0
+      - time: 1
+        value: -2.55969574e-08
+        inSlope: .0146132708
+        outSlope: .0146132708
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.20483421e-07
+        inSlope: -3.3164892e-07
+        outSlope: -3.3164892e-07
+        tangentMode: 0
+      - time: .100000009
+        value: -1.27625327e-07
+        inSlope: 2.5685587e-10
+        outSlope: 2.5685587e-10
+        tangentMode: 0
+      - time: .266666681
+        value: -1.47395085e-07
+        inSlope: 4.36749374e-08
+        outSlope: 4.36749374e-08
+        tangentMode: 0
+      - time: .333333343
+        value: -1.09219911e-07
+        inSlope: -.0222264491
+        outSlope: -.0222264491
+        tangentMode: 0
+      - time: .366666675
+        value: -.00148191652
+        inSlope: -.08738745
+        outSlope: -.08738745
+        tangentMode: 0
+      - time: .400000036
+        value: -.00582594285
+        inSlope: -.164006099
+        outSlope: -.164006099
+        tangentMode: 0
+      - time: .433333367
+        value: -.0124156596
+        inSlope: -.197719321
+        outSlope: -.197719321
+        tangentMode: 0
+      - time: .466666698
+        value: -.0190072302
+        inSlope: -.144291699
+        outSlope: -.144291699
+        tangentMode: 0
+      - time: .533333361
+        value: -.022017356
+        inSlope: .00215618685
+        outSlope: .00215618685
+        tangentMode: 0
+      - time: .700000048
+        value: -.0181611143
+        inSlope: .0569704622
+        outSlope: .0569704622
+        tangentMode: 0
+      - time: 1
+        value: -1.20483421e-07
+        inSlope: .0128945783
+        outSlope: .0128945783
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.728815258
+        inSlope: -.149801359
+        outSlope: -.149801359
+        tangentMode: 0
+      - time: .100000009
+        value: -.766304076
+        inSlope: -.622478127
+        outSlope: -.622478127
+        tangentMode: 0
+      - time: .266666681
+        value: -.867856503
+        inSlope: -.369300872
+        outSlope: -.369300872
+        tangentMode: 0
+      - time: .333333343
+        value: -.88104403
+        inSlope: .191816404
+        outSlope: .191816404
+        tangentMode: 0
+      - time: .366666675
+        value: -.864769518
+        inSlope: .884474874
+        outSlope: .884474874
+        tangentMode: 0
+      - time: .400000036
+        value: -.822079003
+        inSlope: 1.50713897
+        outSlope: 1.50713897
+        tangentMode: 0
+      - time: .433333367
+        value: -.764293551
+        inSlope: 1.67328191
+        outSlope: 1.67328191
+        tangentMode: 0
+      - time: .466666698
+        value: -.710526884
+        inSlope: 1.16513944
+        outSlope: 1.16513944
+        tangentMode: 0
+      - time: .533333361
+        value: -.688682079
+        inSlope: -.107136279
+        outSlope: -.107136279
+        tangentMode: 0
+      - time: .700000048
+        value: -.713383734
+        inSlope: -.0828668475
+        outSlope: -.0828668475
+        tangentMode: 0
+      - time: 1
+        value: -.728815258
+        inSlope: -.00756741269
+        outSlope: -.00756741269
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .684710443
+        inSlope: -.160626754
+        outSlope: -.160626754
+        tangentMode: 0
+      - time: .100000009
+        value: .642478168
+        inSlope: -.747199059
+        outSlope: -.747199059
+        tangentMode: 0
+      - time: .266666681
+        value: .496815026
+        inSlope: -.638126194
+        outSlope: -.638126194
+        tangentMode: 0
+      - time: .333333343
+        value: .473034322
+        inSlope: .340282947
+        outSlope: .340282947
+        tangentMode: 0
+      - time: .366666675
+        value: .50215739
+        inSlope: 1.4433316
+        outSlope: 1.4433316
+        tangentMode: 0
+      - time: .400000036
+        value: .569256485
+        inSlope: 2.13541222
+        outSlope: 2.13541222
+        tangentMode: 0
+      - time: .433333367
+        value: .644518256
+        inSlope: 2.00699973
+        outSlope: 2.00699973
+        tangentMode: 0
+      - time: .466666698
+        value: .703056455
+        inSlope: 1.22641003
+        outSlope: 1.22641003
+        tangentMode: 0
+      - time: .533333361
+        value: .724323094
+        inSlope: -.102134861
+        outSlope: -.102134861
+        tangentMode: 0
+      - time: .700000048
+        value: .700250685
+        inSlope: -.0812307
+        outSlope: -.0812307
+        tangentMode: 0
+      - time: 1
+        value: .684710443
+        inSlope: -.00804127008
+        outSlope: -.00804127008
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.93709981e-08
+        inSlope: 2.60121507e-08
+        outSlope: 2.60121507e-08
+        tangentMode: 0
+      - time: .300000012
+        value: 7.44406634e-08
+        inSlope: 1.14065915e-06
+        outSlope: 1.14065915e-06
+        tangentMode: 0
+      - time: .366666675
+        value: -1.13087917e-09
+        inSlope: -9.53774133e-07
+        outSlope: -9.53774133e-07
+        tangentMode: 0
+      - time: .433333367
+        value: -3.61106522e-08
+        inSlope: 3.78130835e-07
+        outSlope: 3.78130835e-07
+        tangentMode: 0
+      - time: .5
+        value: 7.03098948e-08
+        inSlope: 1.55124056e-07
+        outSlope: 1.55124056e-07
+        tangentMode: 0
+      - time: .566666722
+        value: 7.03098948e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: 4.54128823e-09
+        inSlope: -2.6140151e-07
+        outSlope: -2.6140151e-07
+        tangentMode: 0
+      - time: .866666734
+        value: 9.5892414e-09
+        inSlope: 4.1490199e-07
+        outSlope: 4.1490199e-07
+        tangentMode: 0
+      - time: .966666698
+        value: 5.82385908e-08
+        inSlope: -5.53996756e-07
+        outSlope: -5.53996756e-07
+        tangentMode: 0
+      - time: 1
+        value: 2.93709981e-08
+        inSlope: -8.66028586e-07
+        outSlope: -8.66028586e-07
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 8.89772807e-08
+        inSlope: -1.05828725e-07
+        outSlope: -1.05828725e-07
+        tangentMode: 0
+      - time: .300000012
+        value: 1.13368678e-07
+        inSlope: 4.90228786e-07
+        outSlope: 4.90228786e-07
+        tangentMode: 0
+      - time: .366666675
+        value: 9.44814644e-08
+        inSlope: -1.84641578e-07
+        outSlope: -1.84641578e-07
+        tangentMode: 0
+      - time: .433333367
+        value: 1.033263e-07
+        inSlope: 5.52343238e-08
+        outSlope: 5.52343238e-08
+        tangentMode: 0
+      - time: .5
+        value: 1.43870565e-07
+        inSlope: 3.96985541e-07
+        outSlope: 3.96985541e-07
+        tangentMode: 0
+      - time: .566666722
+        value: 1.43870565e-07
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: 1.15799331e-07
+        inSlope: -9.74038485e-08
+        outSlope: -9.74038485e-08
+        tangentMode: 0
+      - time: .866666734
+        value: 9.61483053e-08
+        inSlope: -3.98130169e-08
+        outSlope: -3.98130169e-08
+        tangentMode: 0
+      - time: .966666698
+        value: 1.05924357e-07
+        inSlope: -3.41944173e-07
+        outSlope: -3.41944173e-07
+        tangentMode: 0
+      - time: 1
+        value: 8.89772807e-08
+        inSlope: -5.08412768e-07
+        outSlope: -5.08412768e-07
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .868577182
+        inSlope: .00841319561
+        outSlope: .00841319561
+        tangentMode: 0
+      - time: .300000012
+        value: .903624654
+        inSlope: .264258415
+        outSlope: .264258415
+        tangentMode: 0
+      - time: .366666675
+        value: .929757655
+        inSlope: .593851566
+        outSlope: .593851566
+        tangentMode: 0
+      - time: .433333367
+        value: .972210467
+        inSlope: .473829269
+        outSlope: .473829269
+        tangentMode: 0
+      - time: .5
+        value: .988108277
+        inSlope: .058992561
+        outSlope: .058992561
+        tangentMode: 0
+      - time: .566666722
+        value: .988108277
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: .981579006
+        inSlope: -.202731162
+        outSlope: -.202731162
+        tangentMode: 0
+      - time: .866666734
+        value: .924791515
+        inSlope: -.58674401
+        outSlope: -.58674401
+        tangentMode: 0
+      - time: .966666698
+        value: .873583972
+        inSlope: -.272066563
+        outSlope: -.272066563
+        tangentMode: 0
+      - time: 1
+        value: .868577182
+        inSlope: -.150203854
+        outSlope: -.150203854
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .495554
+        inSlope: -.0147575131
+        outSlope: -.0147575131
+        tangentMode: 0
+      - time: .300000012
+        value: .428325206
+        inSlope: -.56005466
+        outSlope: -.56005466
+        tangentMode: 0
+      - time: .366666675
+        value: .368172228
+        inSlope: -1.55549991
+        outSlope: -1.55549991
+        tangentMode: 0
+      - time: .433333367
+        value: .234108627
+        inSlope: -1.90605295
+        outSlope: -1.90605295
+        tangentMode: 0
+      - time: .5
+        value: .153759867
+        inSlope: -.35155344
+        outSlope: -.35155344
+        tangentMode: 0
+      - time: .566666722
+        value: .153759867
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: .191056818
+        inSlope: 1.00634456
+        outSlope: 1.00634456
+        tangentMode: 0
+      - time: .866666734
+        value: .380474359
+        inSlope: 1.43505907
+        outSlope: 1.43505907
+        tangentMode: 0
+      - time: .966666698
+        value: .486673445
+        inSlope: .498561025
+        outSlope: .498561025
+        tangentMode: 0
+      - time: 1
+        value: .495554
+        inSlope: .266416937
+        outSlope: .266416937
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.09498835e-07
+        inSlope: -3.03802835e-07
+        outSlope: -3.03802835e-07
+        tangentMode: 0
+      - time: .166666672
+        value: 9.34567126e-08
+        inSlope: -3.35574725e-07
+        outSlope: -3.35574725e-07
+        tangentMode: 0
+      - time: .333333343
+        value: 6.70462867e-08
+        inSlope: -4.48355308e-08
+        outSlope: -4.48355308e-08
+        tangentMode: 0
+      - time: .433333367
+        value: 5.19800203e-08
+        inSlope: -5.78401568e-07
+        outSlope: -5.78401568e-07
+        tangentMode: 0
+      - time: .5
+        value: 9.3779299e-08
+        inSlope: -5.24050634e-08
+        outSlope: -5.24050634e-08
+        tangentMode: 0
+      - time: .633333385
+        value: 9.3779299e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.09498835e-07
+        inSlope: 9.94290986e-07
+        outSlope: 9.94290986e-07
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.55052106e-07
+        inSlope: -2.50004382e-06
+        outSlope: -2.50004382e-06
+        tangentMode: 0
+      - time: .166666672
+        value: 1.40480864e-07
+        inSlope: -1.08757274e-06
+        outSlope: -1.08757274e-06
+        tangentMode: 0
+      - time: .333333343
+        value: 4.82608691e-08
+        inSlope: -3.98305701e-07
+        outSlope: -3.98305701e-07
+        tangentMode: 0
+      - time: .433333367
+        value: 5.37616991e-08
+        inSlope: 1.19481342e-07
+        outSlope: 1.19481342e-07
+        tangentMode: 0
+      - time: .5
+        value: 1.37531089e-07
+        inSlope: -2.95360394e-07
+        outSlope: -2.95360394e-07
+        tangentMode: 0
+      - time: .633333385
+        value: 1.37531089e-07
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.55052106e-07
+        inSlope: 9.66015591e-07
+        outSlope: 9.66015591e-07
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .820408881
+        inSlope: -.0823420212
+        outSlope: -.0823420212
+        tangentMode: 0
+      - time: .166666672
+        value: .768629313
+        inSlope: -.485232115
+        outSlope: -.485232115
+        tangentMode: 0
+      - time: .333333343
+        value: .711243451
+        inSlope: .104121581
+        outSlope: .104121581
+        tangentMode: 0
+      - time: .433333367
+        value: .77278626
+        inSlope: .737766683
+        outSlope: .737766683
+        tangentMode: 0
+      - time: .5
+        value: .803511083
+        inSlope: .133087769
+        outSlope: .133087769
+        tangentMode: 0
+      - time: .633333385
+        value: .803511083
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .820408881
+        inSlope: .0139135253
+        outSlope: .0139135253
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .571777284
+        inSlope: .117548697
+        outSlope: .117548697
+        tangentMode: 0
+      - time: .166666672
+        value: .639694452
+        inSlope: .583035231
+        outSlope: .583035231
+        tangentMode: 0
+      - time: .333333343
+        value: .702945769
+        inSlope: -.107430533
+        outSlope: -.107430533
+        tangentMode: 0
+      - time: .433333367
+        value: .634666383
+        inSlope: -.892110825
+        outSlope: -.892110825
+        tangentMode: 0
+      - time: .5
+        value: .595289826
+        inSlope: -.176896319
+        outSlope: -.176896319
+        tangentMode: 0
+      - time: .633333385
+        value: .595289826
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .571777284
+        inSlope: -.019946713
+        outSlope: -.019946713
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.41966716e-09
+        inSlope: -6.88811563e-10
+        outSlope: -6.88811563e-10
+        tangentMode: 0
+      - time: .0666666701
+        value: -1.5049475e-09
+        inSlope: -2.31238273e-09
+        outSlope: -2.31239983e-09
+        tangentMode: 0
+      - time: .300000012
+        value: -2.21671015e-09
+        inSlope: -1.27919286e-09
+        outSlope: -1.27918609e-09
+        tangentMode: 0
+      - time: .333333343
+        value: -2.23967023e-09
+        inSlope: 1.15032339e-08
+        outSlope: 1.15031309e-08
+        tangentMode: 0
+      - time: .366666675
+        value: -1.44982915e-09
+        inSlope: 4.00994935e-08
+        outSlope: 4.00994971e-08
+        tangentMode: 0
+      - time: .400000006
+        value: 4.33638847e-10
+        inSlope: 6.19719245e-08
+        outSlope: 6.19720382e-08
+        tangentMode: 0
+      - time: .433333337
+        value: 2.68164935e-09
+        inSlope: 6.197196e-08
+        outSlope: 6.19719955e-08
+        tangentMode: 0
+      - time: .466666669
+        value: 4.56511762e-09
+        inSlope: 4.00994153e-08
+        outSlope: 4.00995432e-08
+        tangentMode: 0
+      - time: .5
+        value: 5.35495914e-09
+        inSlope: 1.18474723e-08
+        outSlope: 1.18475594e-08
+        tangentMode: 0
+      - time: .533333361
+        value: 5.35495914e-09
+        inSlope: 2.06542902e-14
+        outSlope: 6.61745121e-23
+        tangentMode: 0
+      - time: .633333325
+        value: 5.35495914e-09
+        inSlope: 2.83605056e-23
+        outSlope: -8.12896096e-14
+        tangentMode: 0
+      - time: .699999988
+        value: 5.16526999e-09
+        inSlope: -1.05684022e-08
+        outSlope: -1.05683178e-08
+        tangentMode: 0
+      - time: .866666675
+        value: 9.65001523e-10
+        inSlope: -2.88596631e-08
+        outSlope: -2.88599669e-08
+        tangentMode: 0
+      - time: .899999976
+        value: 4.36521999e-11
+        inSlope: -2.52017323e-08
+        outSlope: -2.52013539e-08
+        tangentMode: 0
+      - time: .933333337
+        value: -7.1510603e-10
+        inSlope: -1.91042684e-08
+        outSlope: -1.91044709e-08
+        tangentMode: 0
+      - time: .966666639
+        value: -1.22997768e-09
+        inSlope: -1.05684883e-08
+        outSlope: -1.05683418e-08
+        tangentMode: 0
+      - time: 1
+        value: -1.41966716e-09
+        inSlope: -5.69065328e-09
+        outSlope: -5.69065328e-09
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .222920433
+        inSlope: .0125819594
+        outSlope: .0125819594
+        tangentMode: 0
+      - time: .0666666701
+        value: .224477932
+        inSlope: .0422350392
+        outSlope: .0422339812
+        tangentMode: 0
+      - time: .300000012
+        value: .237477005
+        inSlope: .0233611483
+        outSlope: .0233632494
+        tangentMode: 0
+      - time: .333333343
+        value: .237896338
+        inSlope: .00629247818
+        outSlope: .00628948258
+        tangentMode: 0
+      - time: .366666675
+        value: .237896338
+        inSlope: -2.0434004e-06
+        outSlope: 2.22044605e-15
+        tangentMode: 0
+      - time: .400000006
+        value: .237896338
+        inSlope: 9.51619811e-16
+        outSlope: 2.22044605e-15
+        tangentMode: 0
+      - time: .433333337
+        value: .237896338
+        inSlope: 9.51619811e-16
+        outSlope: 2.22044605e-15
+        tangentMode: 0
+      - time: .466666669
+        value: .237896338
+        inSlope: 9.51619811e-16
+        outSlope: 2.22044605e-15
+        tangentMode: 0
+      - time: .5
+        value: .237896338
+        inSlope: 9.51619811e-16
+        outSlope: 2.22044414e-15
+        tangentMode: 0
+      - time: .533333361
+        value: .237896338
+        inSlope: 9.51618964e-16
+        outSlope: 2.22044817e-15
+        tangentMode: 0
+      - time: .633333325
+        value: .237896338
+        inSlope: 9.51620658e-16
+        outSlope: 2.04339858e-06
+        tangentMode: 0
+      - time: .699999988
+        value: .237477005
+        inSlope: -.0233632699
+        outSlope: -.023361126
+        tangentMode: 0
+      - time: .866666675
+        value: .228191957
+        inSlope: -.0637920275
+        outSlope: -.0637924969
+        tangentMode: 0
+      - time: .899999976
+        value: .226155236
+        inSlope: -.0557080545
+        outSlope: -.0557107106
+        tangentMode: 0
+      - time: .933333337
+        value: .224477932
+        inSlope: -.0422339439
+        outSlope: -.0422350839
+        tangentMode: 0
+      - time: .966666639
+        value: .223339766
+        inSlope: -.023365939
+        outSlope: -.0233591404
+        tangentMode: 0
+      - time: 1
+        value: .222920433
+        inSlope: -.0125771808
+        outSlope: -.0125771808
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.032479234
+        inSlope: -.0157581102
+        outSlope: -.0157581102
+        tangentMode: 0
+      - time: .0666666701
+        value: -.0344302207
+        inSlope: -.0529015325
+        outSlope: -.0529021099
+        tangentMode: 0
+      - time: .300000012
+        value: -.0507134534
+        inSlope: -.0292655006
+        outSlope: -.0292650256
+        tangentMode: 0
+      - time: .333333343
+        value: -.0512387156
+        inSlope: .263162851
+        outSlope: .263161778
+        tangentMode: 0
+      - time: .366666675
+        value: -.0331692584
+        inSlope: .917369723
+        outSlope: .917369962
+        tangentMode: 0
+      - time: .400000006
+        value: .00991946645
+        inSlope: 1.41775262
+        outSlope: 1.41775489
+        tangentMode: 0
+      - time: .433333337
+        value: .0613479502
+        inSlope: 1.4177531
+        outSlope: 1.41775513
+        tangentMode: 0
+      - time: .466666669
+        value: .104436681
+        inSlope: .917368293
+        outSlope: .917371869
+        tangentMode: 0
+      - time: .5
+        value: .122506149
+        inSlope: .271040887
+        outSlope: .271041512
+        tangentMode: 0
+      - time: .533333361
+        value: .122506149
+        inSlope: -6.73117654e-07
+        outSlope: 3.33067225e-15
+        tangentMode: 0
+      - time: .633333325
+        value: .122506149
+        inSlope: 1.42743104e-15
+        outSlope: -1.93997973e-09
+        tangentMode: 0
+      - time: .699999988
+        value: .118166558
+        inSlope: -.241776302
+        outSlope: -.241773903
+        tangentMode: 0
+      - time: .866666675
+        value: .0220756233
+        inSlope: -.660232127
+        outSlope: -.66023916
+        tangentMode: 0
+      - time: .899999976
+        value: .000997609925
+        inSlope: -.576548338
+        outSlope: -.576539636
+        tangentMode: 0
+      - time: .933333337
+        value: -.0163607541
+        inSlope: -.437054425
+        outSlope: -.437058806
+        tangentMode: 0
+      - time: .966666639
+        value: -.0281396452
+        inSlope: -.241778508
+        outSlope: -.241775379
+        tangentMode: 0
+      - time: 1
+        value: -.032479234
+        inSlope: -.130186722
+        outSlope: -.130186722
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.25399667
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -.25399667
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -9.09494681e-15
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -9.09494681e-15
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0146628572
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .0146628572
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .110572115
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .110572115
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.00258814e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -2.00258814e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .092203021
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .092203021
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .105587423
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .105587423
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.39687835e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -1.39687835e-08
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0683381557
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .0683381557
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0248399731
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .0248399731
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.53605695e-09
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -1.53605695e-09
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.118990362
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -.118990362
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -9.53674295e-09
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -9.53674295e-09
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -4.54747341e-15
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -4.54747341e-15
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000036
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000036
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000036
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000036
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .999999762
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .999999762
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .999999821
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: .999999821
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1.00000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRig
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 5.1226416e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .300000012
+        value: 1.53679248e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: 1.19528304e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .400000036
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: -1.36603776e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .466666698
+        value: -2.5613208e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .533333361
+        value: -2.39056608e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: -2.39056608e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .833333373
+        value: -1.19528304e-05
+        inSlope: .000274658174
+        outSlope: .000343322783
+        tangentMode: 0
+      - time: .966666698
+        value: 3.4150944e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 5.1226416e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 270
+        inSlope: -.000305175781
+        outSlope: -.000305175781
+        tangentMode: 0
+      - time: .300000012
+        value: 270
+        inSlope: -.000305175781
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .400000036
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: 269.999969
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .466666698
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .533333361
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: 270
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .833333373
+        value: 269.999969
+        inSlope: .000549316348
+        outSlope: .000686645566
+        tangentMode: 0
+      - time: .966666698
+        value: 270
+        inSlope: -.000686645566
+        outSlope: -.00274658459
+        tangentMode: 0
+      - time: 1
+        value: 270
+        inSlope: -.00274658459
+        outSlope: -.00274658459
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 278.95929
+        inSlope: 7.71087599
+        outSlope: 7.71087599
+        tangentMode: 0
+      - time: .300000012
+        value: 287.882019
+        inSlope: 14.3197622
+        outSlope: 14.3206797
+        tangentMode: 0
+      - time: .366666675
+        value: 282.92572
+        inSlope: -264.480774
+        outSlope: -264.443451
+        tangentMode: 0
+      - time: .400000036
+        value: 270.493866
+        inSlope: -408.020905
+        outSlope: -408.018524
+        tangentMode: 0
+      - time: .433333367
+        value: 255.655823
+        inSlope: -407.677948
+        outSlope: -407.677948
+        tangentMode: 0
+      - time: .466666698
+        value: 243.223999
+        inSlope: -264.012482
+        outSlope: -263.630005
+        tangentMode: 0
+      - time: .533333361
+        value: 238.010666
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .666666687
+        value: 238.010666
+        inSlope: 17.1984119
+        outSlope: 17.1982708
+        tangentMode: 0
+      - time: .833333373
+        value: 258.484985
+        inSlope: 181.259018
+        outSlope: 181.426865
+        tangentMode: 0
+      - time: .966666698
+        value: 277.812714
+        inSlope: 63.8470497
+        outSlope: 63.8690796
+        tangentMode: 0
+      - time: 1
+        value: 278.95929
+        inSlope: 34.3927345
+        outSlope: 34.3927345
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -9.9243141e-07
+        inSlope: .772378087
+        outSlope: .772378087
+        tangentMode: 0
+      - time: .233333349
+        value: .293199092
+        inSlope: -1.96243274
+        outSlope: -1.33827221
+        tangentMode: 0
+      - time: .300000012
+        value: .196183905
+        inSlope: -1.34513867
+        outSlope: -1.34513867
+        tangentMode: 0
+      - time: .366666675
+        value: .398170292
+        inSlope: 13.2687387
+        outSlope: 13.268733
+        tangentMode: 0
+      - time: .433333367
+        value: 1.91063321
+        inSlope: 25.4848328
+        outSlope: 25.4848557
+        tangentMode: 0
+      - time: .5
+        value: 3.18080521
+        inSlope: 9.93988514
+        outSlope: 9.93987179
+        tangentMode: 0
+      - time: .566666722
+        value: 3.51874948
+        inSlope: 4.15420198
+        outSlope: 4.14001513
+        tangentMode: 0
+      - time: .76666671
+        value: 2.75249028
+        inSlope: -15.8054361
+        outSlope: -15.6806326
+        tangentMode: 0
+      - time: 1
+        value: -9.9243141e-07
+        inSlope: -1.84962726
+        outSlope: -1.84962726
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -3.31094016e-05
+        inSlope: 4.1485157
+        outSlope: 4.1485157
+        tangentMode: 0
+      - time: .233333349
+        value: 4.2914052
+        inSlope: 23.5631218
+        outSlope: 23.6247272
+        tangentMode: 0
+      - time: .300000012
+        value: 5.67400312
+        inSlope: 16.3984699
+        outSlope: 16.3984699
+        tangentMode: 0
+      - time: .366666675
+        value: 6.5495038
+        inSlope: 12.6631174
+        outSlope: 12.6631117
+        tangentMode: 0
+      - time: .433333367
+        value: 7.31013012
+        inSlope: 8.20197773
+        outSlope: 8.20198441
+        tangentMode: 0
+      - time: .5
+        value: 8.05822754
+        inSlope: 15.1529007
+        outSlope: 15.1528807
+        tangentMode: 0
+      - time: .566666722
+        value: 9.13948631
+        inSlope: 13.6484413
+        outSlope: 13.6541758
+        tangentMode: 0
+      - time: .76666671
+        value: 7.91738939
+        inSlope: -35.2565041
+        outSlope: -35.3047676
+        tangentMode: 0
+      - time: 1
+        value: -3.31094016e-05
+        inSlope: -9.09746552
+        outSlope: -9.09746552
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 355.632416
+        inSlope: 12.5871925
+        outSlope: 12.5871925
+        tangentMode: 0
+      - time: .233333349
+        value: 7.28075504
+        inSlope: 54.6975899
+        outSlope: 54.7483101
+        tangentMode: 0
+      - time: .300000012
+        value: 10.08741
+        inSlope: 25.0399036
+        outSlope: 25.0399036
+        tangentMode: 0
+      - time: .366666675
+        value: 7.79128933
+        inSlope: -145.180222
+        outSlope: -145.180145
+        tangentMode: 0
+      - time: .433333367
+        value: 352.949554
+        inSlope: -213.050919
+        outSlope: -213.051102
+        tangentMode: 0
+      - time: .5
+        value: 344.290375
+        inSlope: -34.1537666
+        outSlope: -34.1537209
+        tangentMode: 0
+      - time: .566666722
+        value: 344.515442
+        inSlope: 2.62847686
+        outSlope: 2.65090966
+        tangentMode: 0
+      - time: .76666671
+        value: 346.577911
+        inSlope: 35.78339
+        outSlope: 35.8303452
+        tangentMode: 0
+      - time: 1
+        value: 355.632416
+        inSlope: 11.3371077
+        outSlope: 11.3371077
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigNeck
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.50752703e-06
+        inSlope: .820465088
+        outSlope: .820465088
+        tangentMode: 0
+      - time: .300000012
+        value: 1.3768183
+        inSlope: 5.94696045
+        outSlope: 5.92437792
+        tangentMode: 0
+      - time: .366666675
+        value: 1.50577939
+        inSlope: -9.47502232
+        outSlope: -9.47501755
+        tangentMode: 0
+      - time: .433333367
+        value: 359.891785
+        inSlope: -34.5410004
+        outSlope: -34.5410347
+        tangentMode: 0
+      - time: .5
+        value: 357.939178
+        inSlope: -17.3556614
+        outSlope: -17.3556366
+        tangentMode: 0
+      - time: .566666722
+        value: 357.265533
+        inSlope: -8.52538395
+        outSlope: -8.52584934
+        tangentMode: 0
+      - time: .76666671
+        value: 358.230835
+        inSlope: 20.7609577
+        outSlope: 20.7609577
+        tangentMode: 0
+      - time: .966666698
+        value: .0445885584
+        inSlope: -2.03979516
+        outSlope: -1.92672908
+        tangentMode: 0
+      - time: 1
+        value: -1.50752703e-06
+        inSlope: -1.362306
+        outSlope: -1.362306
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.41155594e-05
+        inSlope: -1.56494141
+        outSlope: -1.56494141
+        tangentMode: 0
+      - time: .300000012
+        value: 358.924347
+        inSlope: 5.92285156
+        outSlope: 5.94497728
+        tangentMode: 0
+      - time: .366666675
+        value: 359.792572
+        inSlope: 21.9657917
+        outSlope: 21.9657822
+        tangentMode: 0
+      - time: .433333367
+        value: 1.56884909
+        inSlope: 23.3981228
+        outSlope: 23.3981438
+        tangentMode: 0
+      - time: .5
+        value: 2.95238137
+        inSlope: 17.2959232
+        outSlope: 17.2958984
+        tangentMode: 0
+      - time: .566666722
+        value: 4.00043821
+        inSlope: 13.1616096
+        outSlope: 13.1632242
+        tangentMode: 0
+      - time: .76666671
+        value: 3.73003221
+        inSlope: -18.6090107
+        outSlope: -18.6090107
+        tangentMode: 0
+      - time: .966666698
+        value: .117206335
+        inSlope: -6.64947557
+        outSlope: -6.68518686
+        tangentMode: 0
+      - time: 1
+        value: 2.41155594e-05
+        inSlope: -3.50464225
+        outSlope: -3.50464225
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 359.086456
+        inSlope: -8.13842773
+        outSlope: -8.13842773
+        tangentMode: 0
+      - time: .300000012
+        value: 350.850739
+        inSlope: -5.6918335
+        outSlope: -5.71426439
+        tangentMode: 0
+      - time: .366666675
+        value: 354.147522
+        inSlope: 157.68541
+        outSlope: 157.685333
+        tangentMode: 0
+      - time: .433333367
+        value: 9.6952877
+        inSlope: 221.094269
+        outSlope: 221.094467
+        tangentMode: 0
+      - time: .5
+        value: 18.779007
+        inSlope: 39.3544197
+        outSlope: 39.3543663
+        tangentMode: 0
+      - time: .566666722
+        value: 18.8296318
+        inSlope: .203246906
+        outSlope: .159759536
+        tangentMode: 0
+      - time: .76666671
+        value: 15.1622095
+        inSlope: -66.6204147
+        outSlope: -66.6204147
+        tangentMode: 0
+      - time: .966666698
+        value: 359.723999
+        inSlope: -35.2093544
+        outSlope: -35.2249489
+        tangentMode: 0
+      - time: 1
+        value: 359.086456
+        inSlope: -19.1217232
+        outSlope: -19.1217232
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -7.53912946e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .266666681
+        value: -4.46078639e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: .265904754
+        inSlope: 13.1689472
+        outSlope: 13.2199821
+        tangentMode: 0
+      - time: .433333367
+        value: 1.54364824
+        inSlope: 16.5426579
+        outSlope: 16.5426712
+        tangentMode: 0
+      - time: .5
+        value: 2.19617176
+        inSlope: 2.50213742
+        outSlope: 2.50213408
+        tangentMode: 0
+      - time: .566666722
+        value: 2.19617152
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .76666671
+        value: 1.76610434
+        inSlope: -7.79823351
+        outSlope: -7.82109022
+        tangentMode: 0
+      - time: 1
+        value: -7.53912946e-06
+        inSlope: -2.03796434
+        outSlope: -2.03796434
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -6.65704147e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .266666681
+        value: -1.60171112e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: 359.954926
+        inSlope: -3.83422875
+        outSlope: -3.663939
+        tangentMode: 0
+      - time: .433333367
+        value: 359.336029
+        inSlope: -14.320673
+        outSlope: -14.3206863
+        tangentMode: 0
+      - time: .5
+        value: 358.621002
+        inSlope: -3.59527779
+        outSlope: -3.59527278
+        tangentMode: 0
+      - time: .566666722
+        value: 358.621002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .76666671
+        value: 358.992859
+        inSlope: 5.85708666
+        outSlope: 5.82432461
+        tangentMode: 0
+      - time: 1
+        value: -6.65704147e-06
+        inSlope: .769631684
+        outSlope: .769631684
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 290.112213
+        inSlope: 11.6688528
+        outSlope: 11.6688528
+        tangentMode: 0
+      - time: .266666681
+        value: 302.559509
+        inSlope: 39.1607628
+        outSlope: 39.1726723
+        tangentMode: 0
+      - time: .366666675
+        value: 301.394257
+        inSlope: -132.537247
+        outSlope: -132.54039
+        tangentMode: 0
+      - time: .433333367
+        value: 287.723114
+        inSlope: -205.121536
+        outSlope: -205.123093
+        tangentMode: 0
+      - time: .5
+        value: 278.856171
+        inSlope: -39.3269539
+        outSlope: -39.3269005
+        tangentMode: 0
+      - time: .566666722
+        value: 278.85614
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .76666671
+        value: 281.297546
+        inSlope: 41.9535866
+        outSlope: 41.9454155
+        tangentMode: 0
+      - time: 1
+        value: 290.112213
+        inSlope: 9.40783024
+        outSlope: 9.40783024
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawUp
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.20706918e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .100000009
+        value: -1.25956631e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .266666681
+        value: -1.43755515e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .333333343
+        value: -1.30935605e-05
+        inSlope: -4.77355957
+        outSlope: -4.75708055
+        tangentMode: 0
+      - time: .366666675
+        value: 359.676361
+        inSlope: -17.8225727
+        outSlope: -17.8225555
+        tangentMode: 0
+      - time: .400000036
+        value: 358.800934
+        inSlope: -30.9676857
+        outSlope: -30.9677143
+        tangentMode: 0
+      - time: .433333367
+        value: 357.638153
+        inSlope: -32.4508705
+        outSlope: -32.4508705
+        tangentMode: 0
+      - time: .466666698
+        value: 356.645416
+        inSlope: -20.4565449
+        outSlope: -20.2601643
+        tangentMode: 0
+      - time: .533333361
+        value: 356.246613
+        inSlope: .411987334
+        outSlope: .415283144
+        tangentMode: 0
+      - time: .700000048
+        value: 356.903168
+        inSlope: 9.5811758
+        outSlope: 9.57977486
+        tangentMode: 0
+      - time: 1
+        value: -1.20706918e-05
+        inSlope: 2.22320604
+        outSlope: 2.22320604
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -7.31561659e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .100000009
+        value: -7.73983902e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .266666681
+        value: -8.88523482e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .333333343
+        value: -2.07104813e-06
+        inSlope: 3.40713525
+        outSlope: 3.42773461
+        tangentMode: 0
+      - time: .366666675
+        value: .219176948
+        inSlope: 8.91677952
+        outSlope: 8.91677094
+        tangentMode: 0
+      - time: .400000036
+        value: .558963418
+        inSlope: 5.31737852
+        outSlope: 5.31738329
+        tangentMode: 0
+      - time: .433333367
+        value: .594034195
+        inSlope: -5.38055468
+        outSlope: -5.38055468
+        tangentMode: 0
+      - time: .466666698
+        value: .293473452
+        inSlope: -9.10766697
+        outSlope: -9.48326206
+        tangentMode: 0
+      - time: .533333361
+        value: .0868130997
+        inSlope: .517044127
+        outSlope: .514709413
+        tangentMode: 0
+      - time: .700000048
+        value: .183856592
+        inSlope: -.120574936
+        outSlope: -.16998294
+        tangentMode: 0
+      - time: 1
+        value: -7.31561659e-06
+        inSlope: -.211181685
+        outSlope: -.211181685
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 266.425659
+        inSlope: -25.1687603
+        outSlope: -25.1687603
+        tangentMode: 0
+      - time: .100000009
+        value: 259.953705
+        inSlope: -111.413261
+        outSlope: -111.352203
+        tangentMode: 0
+      - time: .266666681
+        value: 239.57901
+        inSlope: -84.4222412
+        outSlope: -84.471138
+        tangentMode: 0
+      - time: .333333343
+        value: 236.462891
+        inSlope: 44.7562447
+        outSlope: 44.755558
+        tangentMode: 0
+      - time: .366666675
+        value: 240.285446
+        inSlope: 193.912827
+        outSlope: 193.912643
+        tangentMode: 0
+      - time: .400000036
+        value: 249.39621
+        inSlope: 299.287933
+        outSlope: 299.288208
+        tangentMode: 0
+      - time: .433333367
+        value: 260.268707
+        inSlope: 299.319794
+        outSlope: 299.319794
+        tangentMode: 0
+      - time: .466666698
+        value: 269.385803
+        inSlope: 194.02681
+        outSlope: 193.915573
+        tangentMode: 0
+      - time: .533333361
+        value: 272.886932
+        inSlope: -16.9862385
+        outSlope: -16.9870586
+        tangentMode: 0
+      - time: .700000048
+        value: 268.93045
+        inSlope: -13.2797222
+        outSlope: -13.2772846
+        tangentMode: 0
+      - time: 1
+        value: 266.425659
+        inSlope: -1.2655642
+        outSlope: -1.2655642
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigNeck/MushroomRigHead/MushroomRigJawDown
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -7.18818183e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .300000012
+        value: -8.08534151e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: -1.01139904e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: -1.24800208e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .5
+        value: -1.50514688e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .566666722
+        value: -1.50514688e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: -1.29257605e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .866666734
+        value: -9.77107084e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .966666698
+        value: -7.3557062e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -7.18818183e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 7.97603388e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .300000012
+        value: 1.32725763e-05
+        inSlope: .000152587891
+        outSlope: 0
+        tangentMode: 0
+      - time: .366666675
+        value: 3.86563215e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: -1.2510618e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .5
+        value: 1.04960491e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .566666722
+        value: 1.04960491e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: 3.04605919e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .866666734
+        value: 5.20818776e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .966666698
+        value: 1.17372538e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 7.97603388e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 120.587418
+        inSlope: 1.94671619
+        outSlope: 1.94671619
+        tangentMode: 0
+      - time: .300000012
+        value: 129.277344
+        inSlope: 70.8802795
+        outSlope: 70.960701
+        tangentMode: 0
+      - time: .366666675
+        value: 136.794113
+        inSlope: 190.781723
+        outSlope: 190.781631
+        tangentMode: 0
+      - time: .433333367
+        value: 152.921814
+        inSlope: 224.844727
+        outSlope: 224.844925
+        tangentMode: 0
+      - time: .5
+        value: 162.310226
+        inSlope: 40.8410072
+        outSlope: 40.8409538
+        tangentMode: 0
+      - time: .566666722
+        value: 162.310226
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .733333349
+        value: 157.971069
+        inSlope: -117.549347
+        outSlope: -117.586624
+        tangentMode: 0
+      - time: .866666734
+        value: 135.273849
+        inSlope: -177.352219
+        outSlope: -177.481445
+        tangentMode: 0
+      - time: .966666698
+        value: 121.755653
+        inSlope: -65.0633469
+        outSlope: -65.0762024
+        tangentMode: 0
+      - time: 1
+        value: 120.587418
+        inSlope: -35.0450478
+        outSlope: -35.0450478
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigThigh
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -7.40229052e-06
+        inSlope: .000274658203
+        outSlope: .000274658203
+        tangentMode: 0
+      - time: .166666672
+        value: -5.52262236e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .333333343
+        value: 1.46730815e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: -9.80483264e-07
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .5
+        value: -6.26608335e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .633333385
+        value: -6.26608335e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: -7.40229052e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.x
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.04533426e-05
+        inSlope: -.000274658203
+        outSlope: -.000274658203
+        tangentMode: 0
+      - time: .166666672
+        value: 1.85292702e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .333333343
+        value: 9.35193202e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .433333367
+        value: 8.51302775e-06
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .5
+        value: 1.80164934e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .633333385
+        value: 1.80164934e-05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 2.04533426e-05
+        inSlope: .00012484465
+        outSlope: .00012484465
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.y
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 110.251488
+        inSlope: -16.4459839
+        outSlope: -16.4459839
+        tangentMode: 0
+      - time: .166666672
+        value: 100.461922
+        inSlope: -86.8705444
+        outSlope: -86.8705444
+        tangentMode: 0
+      - time: .333333343
+        value: 90.672348
+        inSlope: 17.144165
+        outSlope: 17.1441612
+        tangentMode: 0
+      - time: .433333367
+        value: 101.209503
+        inSlope: 132.573364
+        outSlope: 132.616028
+        tangentMode: 0
+      - time: .5
+        value: 106.933411
+        inSlope: 25.3646984
+        outSlope: 25.3639889
+        tangentMode: 0
+      - time: .633333385
+        value: 106.933411
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 110.251488
+        inSlope: 2.7867825
+        outSlope: 2.7867825
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAngles.z
+    path: MushroomRigRibcage/MushroomRigThigh/MushroomRigFoot
+    classID: 4
+    script: {fileID: 0}
+  m_Events:
+  - time: .566666663
+    functionName: Attack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: .566666663
+    functionName: Attack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -11,14 +11,18 @@ public class PlayerAttack : MonoBehaviour {
     private float distanceAttackAround = 6f;
     private int[] damageArray = new int[] { 20, 30, 30, 30 };
 
+    public int hp = 1000;
+    private Animator anim;
+
+    private GameObject hudText;
+    private GameObject hpPoint;
     public enum AttackRange
     {
         Forward,
         Around
-        
     }
     
-    void Awake()
+    void Start()
     {
         PlayerAttackEffect[] peArray=transform.GetComponentsInChildren<PlayerAttackEffect>();
         foreach(PlayerAttackEffect pe in peArray)
@@ -29,6 +33,9 @@ public class PlayerAttack : MonoBehaviour {
         {
             effectDic.Add(pe.name, pe);
         }
+        anim = this.GetComponent<Animator>();
+        hpPoint = transform.Find("HpPoint").gameObject;
+        hudText = HpBarManager._instance.GetHudText(hpPoint);
         
     }
 
@@ -188,4 +195,22 @@ public class PlayerAttack : MonoBehaviour {
         return arrList;
     }
 
+    void TakeDamageByEnemy(int damage)
+    {
+        if (hp <= 0)
+            return;
+        hp -= damage;
+
+        //播放受伤动画
+        int randomNum = Random.Range(0, 100);
+        if(randomNum<damage)
+        {
+            anim.SetTrigger("takedamage");
+           
+        }
+        //显示血量减少
+        hudText.GetComponent<HUDText>().Add("-" + damage, Color.green, 0.2f);
+
+        BloodScene._instance.showBloodScene();
+    }
 }
