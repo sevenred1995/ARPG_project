@@ -390,7 +390,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 143: {fileID: 14300000}
   m_Layer: 0
-  m_Name: Monster Cat Bat-Brown
+  m_Name: 04Monster Cat Bat-Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -64,7 +64,7 @@ public class PlayerAttack : MonoBehaviour {
             ArrayList enemyArray = GetEnemyInAttackRanage(AttackRange.Forward);
             foreach(GameObject go in enemyArray)
             {
-                go.SendMessage("TakeDamage",damageArray[0]+","+proArray[3]+","+proArray[4]);
+                go.SendMessage("TakeDamage",damageArray[0]+","+proArray[3]+","+proArray[4],SendMessageOptions.DontRequireReceiver);
             }
         }else if(proArray[0]=="skill1")
         {
@@ -209,7 +209,7 @@ public class PlayerAttack : MonoBehaviour {
            
         }
         //显示血量减少
-        hudText.GetComponent<HUDText>().Add("-" + damage, Color.green, 0.2f);
+        hudText.GetComponent<HUDText>().Add("-" + damage, Color.red, 0.2f);
 
         BloodScene._instance.showBloodScene();
     }

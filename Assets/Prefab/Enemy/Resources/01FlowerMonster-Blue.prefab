@@ -480,7 +480,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 143: {fileID: 14300000}
   m_Layer: 0
-  m_Name: FlowerMonster-Blue
+  m_Name: 01FlowerMonster-Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

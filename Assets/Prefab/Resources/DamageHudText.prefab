@@ -58,7 +58,7 @@ MonoBehaviour:
   font: {fileID: 0}
   bitmapFont: {fileID: 11400000, guid: 429d188bcadff664a8abde8e06bbfa88, type: 2}
   trueTypeFont: {fileID: 0}
-  fontSize: 16
+  fontSize: 11
   fontStyle: 0
   applyGradient: 0
   gradientTop: {r: 1, g: 1, b: 1, a: 1}
