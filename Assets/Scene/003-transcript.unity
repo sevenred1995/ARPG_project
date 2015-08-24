@@ -11589,7 +11589,7 @@ Transform:
   m_GameObject: {fileID: 342721185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9.47000027}
-  m_LocalScale: {x: .00274348422, y: .00274348422, z: .00274348422}
+  m_LocalScale: {x: .00345423142, y: .00345423142, z: .00345423142}
   m_Children:
   - {fileID: 1867784788}
   - {fileID: 1676530343}
@@ -20510,7 +20510,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 907506875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -331.499969, y: 319.5, z: 0}
+  m_LocalPosition: {x: -331.5, y: 244.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1235250565}
@@ -30102,7 +30102,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 0, b: 0, a: 0}
   mPivot: 4
   mWidth: 927
-  mHeight: 729
+  mHeight: 579
   mDepth: 12
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -31981,8 +31981,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: .349999994
-  m_Pitch: 1
-  Loop: 1
+  m_Pitch: .300000012
+  Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -32040,7 +32040,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -32146,7 +32146,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1676530341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 359.499969, y: -262.5, z: 0}
+  m_LocalPosition: {x: 359.5, y: -187.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469115818}
