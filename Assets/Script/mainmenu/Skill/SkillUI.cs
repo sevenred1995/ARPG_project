@@ -15,13 +15,10 @@ public class SkillUI : MonoBehaviour {
         upgradeBtnLabel = transform.Find("Bg/upgrade-button/Label").GetComponent<UILabel>();
         upgradeBtn = transform.Find("Bg/upgrade-button").GetComponent<UIButton>();
         closeBtn = transform.Find("Bg/btn-close").GetComponent<UIButton>();
-
         EventDelegate ed = new EventDelegate(this,"OnUpgradeClick");
         upgradeBtn.onClick.Add(ed);
-
         EventDelegate ed1 = new EventDelegate(this, "OnClose");
         closeBtn.onClick.Add(ed1);
-
         skillNameLabel.text = "";
         skillDesLabel.text = "";
         upgradeBtnLabel.text = "选择技能";

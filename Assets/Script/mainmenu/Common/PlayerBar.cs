@@ -13,7 +13,6 @@ public class PlayerBar : MonoBehaviour {
     public UIButton EnergyPlusBtn;
     public UIButton ToughenPlusBtn;
     public UIButton HeadBtn;
-
     void Awake()
     {
         HeadSprite = GameObject.Find("PlayerBar/HeadSprite").GetComponent<UISprite>();

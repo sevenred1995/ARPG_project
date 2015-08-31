@@ -4,7 +4,6 @@ using System.Collections;
 public class MessageManager : MonoBehaviour {
     
     public static MessageManager _instance;
-
     private UILabel messageLabel;
     private TweenAlpha messagePanel;
     private TweenPosition msgTween;

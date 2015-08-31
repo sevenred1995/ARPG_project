@@ -27,8 +27,6 @@ public class Enemy : MonoBehaviour {
     private UISlider hpSlider;
     private HUDText hudText;
     private MeshExploder me;
- 
-
     
     void Start()
     {
@@ -119,13 +117,16 @@ public class Enemy : MonoBehaviour {
         hudText.Add("-" + damage, Color.red, 0.2f);
         //播放攻击动画
         animation.Play("takedamage");
+       
 
         float backdistance = float.Parse(proArray[1]);
         float jumpHeight =0;
 
+
         iTween.MoveBy(this.gameObject,
             transform.InverseTransformDirection(TranscriptManager._instance.player.transform.forward) * backdistance + Vector3.up * jumpHeight,
              0.3f);
+        
         GameObject.Instantiate(damageEffectPrefab, bloodPoint.transform.position, Quaternion.identity);
 
         if(hp<=0)
@@ -154,4 +155,6 @@ public class Enemy : MonoBehaviour {
             me.Explode();
         }
     }
+
+
 }
