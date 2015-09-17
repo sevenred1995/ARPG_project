@@ -73,7 +73,6 @@ public class PlayerStatus : MonoBehaviour {
         SureBtn.onClick.Add(ed2);
         EventDelegate ed3 = new EventDelegate(this, "On_ChangeCancel_Click");
         CancelBtn.onClick.Add(ed3);
-
         //注册事件
         playerInfo._instance.OnPlayerInfoChanged+=this.OnPlayerInfoChanged;
     

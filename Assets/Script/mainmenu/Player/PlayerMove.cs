@@ -40,7 +40,7 @@ public class PlayerMove : MonoBehaviour {
         }
         if(agent.enabled)
         {
-            transform.rotation = Quaternion.LookRotation(agent.velocity);
+            //transform.rotation = Quaternion.LookRotation(agent.velocity);
             if (agent.remainingDistance > minDistance)
             {
                 playeranim.SetBool("isMove", true);

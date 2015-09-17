@@ -4,29 +4,32 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
     public GameObject damageEffectPrefab;
     public int TotalHp = 200;
-  
     public float speed = 2;
     public float attackRate = 2;//表示的是敌人的攻击速度
     public float attackDistance = 1;
     public float attack;//敌人的攻击力
-
     private float attackTimer = 0;//攻击计时器
     private float distance = 0;//当前与player的距离
     private int hp;//保存当前血量
-
     //死亡后；
     public float downSpeed = 2.0f;
     public float downDistance = 4;
-
+    public string guid;//用于区分敌人的唯一标识符。。
     private Transform bloodPoint;
     private Transform hpPoint;
     private CharacterController cc;
     private GameObject hpBar;
     private GameObject damageHudText;
-
     private UISlider hpSlider;
     private HUDText hudText;
     private MeshExploder me;
+    private Vector3 lastPostion = Vector3.zero;
+    private Vector3 lastEulerAnglers = Vector3.zero;
+    private bool lastisIdle = true;
+    private bool lastisWalk = false;
+    private bool lastisAttack = false;
+    private bool lastisTakeDamage = false;
+    private bool lastisDie = false;
     
     void Start()
     {
@@ -42,6 +45,11 @@ public class Enemy : MonoBehaviour {
         hpSlider = hpBar.GetComponentInChildren<UISlider>();
         hudText = damageHudText.GetComponent<HUDText>();
         me = gameObject.GetComponentInChildren<MeshExploder>();
+        if (GameManger._instance.battleType == BattleType.Team && GameManger._instance.isMaster)
+        {
+            InvokeRepeating("AsyncEnemyPostionRotation", 0, 1f / 30);
+            InvokeRepeating("CheckAnimation", 0, 1f / 30);
+        }
     }
     void Update()
     {
@@ -54,33 +62,32 @@ public class Enemy : MonoBehaviour {
             transform.Translate(-transform.up * downSpeed*Time.deltaTime);
             return;
         }
-        if(distance<=attackDistance)
+
+        if((GameManger._instance.battleType==BattleType.Team&&GameManger._instance.isMaster)||GameManger._instance.battleType==BattleType.Person)
         {
-            attackTimer += Time.deltaTime;
-            if(attackTimer>=attackRate)
+            if (distance <= attackDistance)
             {
-               // if(!animation.IsPlaying("takedamage"))
-               // {
-                    //面向主角
+                attackTimer += Time.deltaTime;
+                if (attackTimer >= attackRate)
+                {
                     Transform player = TranscriptManager._instance.player.transform;
                     Vector3 targetPos = player.position;
                     targetPos.y = transform.position.y;
                     transform.LookAt(targetPos);
                     animation.Play("attack01");
                     attackTimer = 0;
-                //}
+                }
+                if (!animation.IsPlaying("attack01"))
+                {
+                    animation.Play("idle");
+                }
             }
-            if(!animation.IsPlaying("attack01"))
+            else
             {
-                animation.Play("idle");
+                animation.Play("walk");
+                Move();
             }
         }
-        else
-        {
-            animation.Play("walk");
-            Move();
-        }
-       
     }
     void GetCurrentDistance()
     {
@@ -140,13 +147,13 @@ public class Enemy : MonoBehaviour {
         cc.enabled = false;
         Destroy(hpBar);
         Destroy(damageHudText);
-        TranscriptManager._instance.enemyList.Remove(this.gameObject);
+        TranscriptManager._instance.RemoveEnemy(this.gameObject);
         int randomNum = Random.Range(0, 10);
         if(randomNum<5)
         {
             //播放死亡动画
              animation.Play("die");
-             downSpeed = 0.3f;
+             downSpeed = 0.3f; 
         }
         else
         {
@@ -155,6 +162,28 @@ public class Enemy : MonoBehaviour {
             me.Explode();
         }
     }
-
+    void AsyncEnemyPostionRotation() {
+        Vector3 postion = transform.position;
+        Vector3 eularAnglers = transform.eulerAngles;
+        if (postion.x != lastPostion.x || postion.y != lastPostion.y || postion.z != lastPostion.z ||
+            eularAnglers.x != lastEulerAnglers.x || eularAnglers.y != lastEulerAnglers.y || eularAnglers.z != lastEulerAnglers.z)
+        {
+            TranscriptManager._instance.AddEnemyToSync(this);
+            lastPostion = postion;
+            lastEulerAnglers = eularAnglers;
+        }
+    }
+    void CheckAnimation() {
+        if (lastisAttack != animation.IsPlaying("attack01")||lastisIdle!=animation.IsPlaying("idle")||lastisDie!=animation.IsPlaying("die")
+            || lastisTakeDamage != animation.IsPlaying("takedamage") || lastisWalk != animation.IsPlaying("walk"))
+        {
+            TranscriptManager._instance.AddEnemyAnimationToSync(this);//
+            lastisAttack = animation.IsPlaying("attack01");
+            lastisIdle = animation.IsPlaying("idle");
+            lastisDie = animation.IsPlaying("die");
+            lastisTakeDamage = animation.IsPlaying("takedamage");
+            lastisWalk = animation.IsPlaying("walk");
+        }
+    }
 
 }

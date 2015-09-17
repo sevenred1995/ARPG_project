@@ -7,28 +7,26 @@ public class Boss : MonoBehaviour {
     /// Boss AI
     /// Boss Attack
     /// </summary>
-
     public float hp = 1000000;
-
     public float viewAngle=60f;
     public float rotateSpeed = 0.5f;
     public float attackDistance = 5;
     public float moveSpeed = 2;
     public float attackTimeInterval=1;
-
+    public string guid;
     private int attackIndex = 0;
     private bool isAttack = false;
     private float timer;
     private float distance;
     private Transform player;
-
     private BossAttackEffect[] atcArray;
     private int[] attackArray=new int[] {30,40,80};
     private GameObject bossBulletPrefab;
     private GameObject attack03Point;
-
     private Transform bloodPoint;
     public GameObject damageEffectPrefab;
+    private Vector3 lastPostion = Vector3.zero;
+    private Vector3 lastEulerAnglers = Vector3.zero;
     void Start()
     {
         player = TranscriptManager._instance.player.transform;
@@ -37,6 +35,10 @@ public class Boss : MonoBehaviour {
         bossBulletPrefab = Resources.Load<GameObject>("BossBullet");
         attack03Point = transform.Find("attack03Point").gameObject;
         bloodPoint = transform.Find("BloodPoint").transform;
+        if (GameManger._instance.battleType == BattleType.Team && GameManger._instance.isMaster)
+        {
+            InvokeRepeating("SyncBossPostionRotation", 0, 1f / 30);
+        }
     }
 
     void Update()
@@ -44,43 +46,46 @@ public class Boss : MonoBehaviour {
         Vector3 playerPos = player.position;
         playerPos.y = transform.position.y;
         float angle = Vector3.Angle(playerPos-transform.position,transform.forward);
-        if(angle<(viewAngle/2))
+        if ((GameManger._instance.battleType == BattleType.Team && GameManger._instance.isMaster) || GameManger._instance.battleType == BattleType.Person)
         {
-            if(distance<=attackDistance)
+            if (angle < (viewAngle / 2))
             {
-                //进行攻击
-                if (isAttack == false)//不在播放攻击动画状态
+                if (distance <= attackDistance)
                 {
-                    animation.CrossFade("idle");
-                    timer += Time.deltaTime;
-                    if (timer >= attackTimeInterval)
+                    //进行攻击
+                    if (isAttack == false)//不在播放攻击动画状态
                     {
-                       // Debug.Log("123");
-                        timer = 0;
-                        BossAttack();
+                        animation.CrossFade("idle");
+                        timer += Time.deltaTime;
+                        if (timer >= attackTimeInterval)
+                        {
+                            // Debug.Log("123");
+                            timer = 0;
+                            BossAttack();
+                        }
                     }
+
                 }
-            
+                else
+                {
+                    if (!isAttack)//在播放攻击动画的时候不可以进行转向和行走运动
+                    {
+                        animation.CrossFade("walk");
+                        rigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+                    }
+
+                }
             }
             else
             {
-                if(!isAttack)//在播放攻击动画的时候不可以进行转向和行走运动
+                if (!isAttack)
                 {
-                    animation.CrossFade("walk");
-                    rigidbody.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+                    animation.Play("walk");
+                    Quaternion targetRotation = Quaternion.LookRotation(playerPos - transform.position);
+                    transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
                 }
-               
+
             }
-        }
-        else
-        {
-            if(!isAttack)
-            {
-                animation.Play("walk");
-                Quaternion targetRotation = Quaternion.LookRotation(playerPos - transform.position);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
-            }
-       
         }
     }
     void GetDistance()
@@ -182,5 +187,16 @@ public class Boss : MonoBehaviour {
     {
 
     }
-   
+    void SyncBossPostionRotation() {
+        Vector3 postion = transform.position;
+        Vector3 eularAnglers = transform.eulerAngles;
+        if (postion.x != lastPostion.x || postion.y != lastPostion.y || postion.z != lastPostion.z ||
+            eularAnglers.x != lastEulerAnglers.x || eularAnglers.y != lastEulerAnglers.y || eularAnglers.z != lastEulerAnglers.z)
+        {
+            //TranscriptManager._instance(this);
+            TranscriptManager._instance.bossToSync = this;
+            lastPostion = postion;
+            lastEulerAnglers = eularAnglers;
+        }
+    }
 }

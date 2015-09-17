@@ -16,17 +16,13 @@ public class InventoryUI : MonoBehaviour {
     void Awake()
     {
         _instance = this;
-        
-        
         arrangeBtn = transform.Find("ArrangeButton").GetComponent<UIButton>();
         numLabel = transform.Find("numberLabel").GetComponent<UILabel>();
 
         //委托事件的注册
         InventoryManager._instance.OnInventoryChange += this.OnInventoryChange;
-
         EventDelegate ed2 = new EventDelegate(this, "On_knapSpack_arrange_Click");
         arrangeBtn.onClick.Add(ed2);
-
     }
 
     void OnInventoryChange()
@@ -43,7 +39,8 @@ public class InventoryUI : MonoBehaviour {
             InventoryItem it = InventoryManager._instance.inventoryItemList[i];
             if (it.IsDressed == false)
             {
-                inventoryItemUIList[temp++].SetInventoryItem(it);
+                if(temp<=30)
+                 inventoryItemUIList[temp++].SetInventoryItem(it);
             } 
         }
         for(int j=temp;j<inventoryItemUIList.Count;j++)

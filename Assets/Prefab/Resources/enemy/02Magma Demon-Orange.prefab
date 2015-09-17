@@ -499,6 +499,7 @@ MonoBehaviour:
   attack: 5
   downSpeed: 1.5
   downDistance: 1
+  guid: 
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

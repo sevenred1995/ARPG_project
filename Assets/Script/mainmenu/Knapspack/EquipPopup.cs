@@ -22,6 +22,8 @@ public class EquipPopup : MonoBehaviour {
     private InventoryItem it;
 
     public PowerShow powerShow;
+
+    private InventoryItemDBController itemController;
     void Awake()
     {
         icon = transform.Find("IconBg/IconSprite").GetComponent<UISprite>();
@@ -46,8 +48,8 @@ public class EquipPopup : MonoBehaviour {
 
         EventDelegate ed2 = new EventDelegate(this, "On_EquipPopup_Upgrade_Click");
         upgradeBtn.onClick.Add(ed2);
-
-
+        itemController = GameObject.Find("GameManager").GetComponent<InventoryItemDBController>();
+        itemController.OnUpdateInventoryItemDB += this.OnUpdateInventoryItemDB;
     
     }
     public void Show(InventoryItem it,InventoryItemUI itUI,bool isleft=true)
@@ -111,13 +113,17 @@ public class EquipPopup : MonoBehaviour {
         {
             it.Level += 1;
             //等级改变，其他战斗力属性值也会随之改变。。。
-            //TODO
-            levelLabel.text = it.Level.ToString();
+            //更改装备等级属性
+            itemController.UpdateInventoryItemDB(it.InventoryItemDB);
+            //TODO  
         }
         else
         {
             MessageManager._instance.ShowMessage("金币不足，无法升级");
-        }
+        } 
+    }
+    void OnUpdateInventoryItemDB() {
+        levelLabel.text = it.Level.ToString();
     }
     void ClearObject()
     {

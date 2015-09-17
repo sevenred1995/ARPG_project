@@ -5,10 +5,9 @@ public class CameraFllow : MonoBehaviour {
     public GameObject player;
     public Vector3 offset;
     public float smoothing = 2;
-    void Awake()
+    void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform.Find("Bip01").gameObject;
-        //offset = new Vector3(0, 20f, 20f);
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void FixedUpdate()
     {

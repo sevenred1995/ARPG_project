@@ -8,15 +8,26 @@ public class BottonBar : MonoBehaviour {
     private UIButton combat;
     private UIButton system;
     private UIButton task;
+    private PlayerMove _playerMove;
+    private PlayerMove PlayerMove {
+        get {
+            if (_playerMove == null)
+                _playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
+            return _playerMove;
+        }
+    }
 
     public TweenScale TaskUItween;
     public TweenScale skillTween;
     public TweenPosition bagTween;
+
+
     void Awake()
     {
         task = transform.Find("task").GetComponent<UIButton>();
         skill = transform.Find("skill").GetComponent<UIButton>();
         bag = transform.Find("bag").GetComponent<UIButton>();
+        combat=transform.Find("combat").GetComponent<UIButton>();
 
         EventDelegate tasked = new EventDelegate(this, "OnTask");
         task.onClick.Add(tasked);
@@ -26,6 +37,15 @@ public class BottonBar : MonoBehaviour {
 
         EventDelegate baged = new EventDelegate(this, "OnBag");
         bag.onClick.Add(baged);
+
+        EventDelegate.Set(combat.onClick, () =>
+        {
+            OnCombat();
+        });
+    }
+
+    void OnCombat() {
+        PlayerMove.SetPostion(PlayerMove.transcriptGo.transform.position);
     }
     void OnTask()
     {

@@ -998,6 +998,7 @@ MonoBehaviour:
   attack: 10
   downSpeed: 1.5
   downDistance: 1
+  guid: 
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

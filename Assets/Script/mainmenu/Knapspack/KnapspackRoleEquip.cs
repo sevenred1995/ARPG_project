@@ -35,8 +35,11 @@ public class KnapspackRoleEquip : MonoBehaviour {
             Sprite.spriteName = "bg_道具";
             return;
         }
-        this.it = it;
-        Sprite.spriteName = it.Inventory.Icon;
+        if(it.IsDressed)
+        {
+            this.it = it;
+            Sprite.spriteName = it.Inventory.Icon;
+        }
     }
 
     public void OnPress(bool isPress)

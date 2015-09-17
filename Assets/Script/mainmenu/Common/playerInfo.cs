@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 public enum InfoType
 {
     Name,
@@ -165,17 +166,25 @@ public class playerInfo : MonoBehaviour {
     public InventoryItem ringItem;
     public InventoryItem wingItem;
 
+
+    private InventoryItem inventoryItemWillDressed;
     //定义委托事件
     public delegate void OnPlayerInfoChangedEvent(InfoType type);
     public event OnPlayerInfoChangedEvent OnPlayerInfoChanged;
 
-
+    private RoleController roleController;
+    private InventoryItemDBController itemDBController;
     void Awake()
     {
         _instance = this;
+        roleController=this.GetComponent<RoleController>();
+        itemDBController = this.GetComponent<InventoryItemDBController>();
     }
     void Start()
     {
+        OnPlayerInfoChanged += this.OnPlayerInfoChange;
+        itemDBController.OnUpdateInventoryItemDB += this.OnUpdateInventoryItemDB;
+        itemDBController.OnUpdateInventoryItemDBList += this.OnUpdateInventoryItemDBList;
         Init();
     }
 
@@ -188,9 +197,10 @@ public class playerInfo : MonoBehaviour {
             if(energyTimer>60.0f)
             {
                 this.Energy += 1;
+                PhotonEngine.Instance.role.Energy += 1;
                 energyTimer -= 60f;
+                OnPlayerInfoChanged(InfoType.Energy);
             }
-            OnPlayerInfoChanged(InfoType.Energy);
         }
         else
         {
@@ -202,45 +212,42 @@ public class playerInfo : MonoBehaviour {
             if(toughenTimer>60f)
             {
                 this.Toughen += 1;
+                PhotonEngine.Instance.role.Toughen += 1;
                 toughenTimer -= 60f;
-               
+                OnPlayerInfoChanged(InfoType.Toughen);
             }
-            OnPlayerInfoChanged(InfoType.Toughen);
         }
         else
         {
             toughenTimer = 0;
         }
     }
-    void Init()
+    public void Init()
     {
-        this.Coin = 30000;
-        this.Diamond = 233;
-        this.Energy = 100;
-        this.Exp = 1000;
-        this.Level = 5;
-        this.Energy = 89;
-        this.Toughen = 30;
-        this.HeadPortrait = "头像底板女性";
-        this.Name = "lqhhh";
+        //Debug.Log(PhotonEngine.Instance.role.Coin+"asdddddddddddddddddddddddddd");
+        this.Coin =PhotonEngine.Instance.role.Coin;
+        this.Diamond = PhotonEngine.Instance.role.Diamond;
+        this.Energy = PhotonEngine.Instance.role.Energy;
+        this.Exp = PhotonEngine.Instance.role.Exp;
+        this.Level = PhotonEngine.Instance.role.Level;
+        this.Energy = PhotonEngine.Instance.role.Energy;
+        this.Toughen = PhotonEngine.Instance.role.Toughen;
+        this.HeadPortrait =PhotonEngine.Instance.role.Isman?"头像底板男性":"头像底板女性";
+        this.Name = PhotonEngine.Instance.role.Name;
         this.playerType = PlayerType.Warrior;
-        //穿戴装备初始化
-        //this.HelmID = 1001;
-        //this.ClothID = 1002;
-        //this.WeaponID = 1003;
-        //this.ShoesID = 1004;
-        //this.NecklaceID = 1005;
-        //this.BraceletID = 1006;
-        //this.NecklaceID = 1007;
-        //this.BraceletID = 1008;
-        //this.RingID = 1009;
-        //this.WingID = 1010;
         InitHpDamagePower();
-        OnPlayerInfoChanged(InfoType.All);
+        //更新装备的装备信息
+        OnPlayerInfoChanged(InfoType.All);//显示信息
+    }
+    public void OnPlayerInfoChange(InfoType infotype)
+    {
+        if (infotype == InfoType.Name || infotype == InfoType.Energy || infotype == InfoType.Toughen||infotype==InfoType.Coin){
+            roleController.UpdateRole(PhotonEngine.Instance.role);  
+        }
     }
     void InitHpDamagePower()
     {
-        this.HP = this.Level * 100;
+        this.HP = this.Level * 1000;
         this.Damage = this.Level * 50;
         this.Power = this.HP + this.Damage;
     }
@@ -265,7 +272,6 @@ public class playerInfo : MonoBehaviour {
         this.Damage -= inventory.Damage;
         this.Power -= inventory.Power;
     }
-
     public int GetAllPower()
     {
         float power = this.Power;
@@ -306,6 +312,7 @@ public class playerInfo : MonoBehaviour {
     public void ChangeName(string newName)
     {
         OnPlayerInfoChanged(InfoType.Name);
+        PhotonEngine.Instance.role.Name = newName;
         this.Name = newName;
     }
     public void DressOn(InventoryItem it)
@@ -381,16 +388,19 @@ public class playerInfo : MonoBehaviour {
                 wingItem = it;
                 break;
             default:
-
                 break;
         }
         //有装备穿上
         if(isDress)
         {
             inventoryItemDressed.IsDressed = false;
-            InventoryUI._instance.AddInventoryItem(inventoryItemDressed);
+            inventoryItemWillDressed = inventoryItemDressed;
+            itemDBController.UpdateInventoryItemDBList(it.InventoryItemDB, inventoryItemDressed.InventoryItemDB);
         }
-       OnPlayerInfoChanged(InfoType.Equip);
+        else
+        {
+            itemDBController.UpdateInventoryItemDB(it.InventoryItemDB);
+        }
     }
     public void DressUp(InventoryItem it)
     {
@@ -426,14 +436,25 @@ public class playerInfo : MonoBehaviour {
 
                 break;
         }
-
+        itemDBController.UpdateInventoryItemDB(it.InventoryItemDB);
+        //OnPlayerInfoChanged(InfoType.Equip);
+    }
+    public void OnUpdateInventoryItemDB() {
+        Debug.Log("装备更新成功");
         OnPlayerInfoChanged(InfoType.Equip);
     }
+    public void OnUpdateInventoryItemDBList() {
+        Debug.Log("装备列表更新成功");
+        InventoryUI._instance.AddInventoryItem(inventoryItemWillDressed);//更新成功后将物品放回背包
+        OnPlayerInfoChanged(InfoType.Equip);
+    }
+
     public bool GetCoin(int count)
     {
        if(Coin>count)
        {
            Coin -= count;
+           PhotonEngine.Instance.role.Coin -= count;
            OnPlayerInfoChanged(InfoType.Coin);
            return true;
        }
@@ -442,6 +463,7 @@ public class playerInfo : MonoBehaviour {
     public void AddCoin(int count)
     {
         Coin += count;
+        PhotonEngine.Instance.role.Coin+=count;
         OnPlayerInfoChanged(InfoType.Coin);
     }
     public void InventoryUse(InventoryItem it,int count)
@@ -469,4 +491,41 @@ public class playerInfo : MonoBehaviour {
     }
 
 
+    public void InitEquip() {
+        foreach (InventoryItem it in InventoryManager._instance.inventoryItemList)
+        {
+            // Debug.Log(it.IsDressed + "=======" + it.Inventory.EquipTYPE);
+            if (it.IsDressed)
+            {
+                switch (it.Inventory.EquipTYPE)
+                {
+                    case EquipType.Helm:
+                        helmItem = it;
+                        break;
+                    case EquipType.Bracelet:
+                        braceletItem = it;
+                        break;
+                    case EquipType.Cloth:
+                        clothItem = it;
+                        break;
+                    case EquipType.Necklace:
+                        necklaceItem = it;
+                        break;
+                    case EquipType.Ring:
+                        ringItem = it;
+                        break;
+                    case EquipType.Shoes:
+                        shoesItem = it;
+                        break;
+                    case EquipType.Weapon:
+                        weaponItem = it;
+                        break;
+                    case EquipType.Wing:
+                        wingItem = it;
+                        break;
+                }
+            }
+            OnPlayerInfoChanged(InfoType.All);//显示信息
+        }
+    }
 }

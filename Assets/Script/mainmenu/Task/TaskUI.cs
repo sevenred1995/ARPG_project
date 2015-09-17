@@ -11,6 +11,7 @@ public class TaskUI : MonoBehaviour {
     void Awake()
     {
         _instance = this;
+       
         taskListGrid = transform.Find("Scroll View/Grid").GetComponent<UIGrid>();
         taskItemPrefab = Resources.Load<GameObject>("Task-Item");
         closeBtn = transform.Find("btn-close").GetComponent<UIButton>();
@@ -19,8 +20,14 @@ public class TaskUI : MonoBehaviour {
         closeBtn.onClick.Add(ed);
         EventDelegate ed1 = new EventDelegate(this,"OnTweenFinish");
         tween.onFinished.Add(ed1);
+        //TaskManager._instance.OnAsyncTaskComplete += this.OnAsyncTaskComplete;
+        TaskManager._instance.OnAsyncTaskComplete += this.OnAsyncTaskComplete;
     }
     void Start()
+    {
+       
+    }
+    void OnAsyncTaskComplete()
     {
         InitTaskList();
     }
@@ -29,9 +36,10 @@ public class TaskUI : MonoBehaviour {
     /// </summary>
     public void InitTaskList()
     {
-
+        Debug.Log("任务列表获取————————");
         foreach(Task task in TaskManager._instance.GetTaskList())
         {
+            Debug.Log("任务列表获取");
             GameObject go = NGUITools.AddChild(taskListGrid.gameObject, taskItemPrefab);
             taskListGrid.AddChild(go.transform);
             TaskitemUI taskitemUI = go.GetComponent<TaskitemUI>();

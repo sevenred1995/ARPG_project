@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TaiDouCommon.Model;
 public enum TaskType
 {
     Main,
@@ -25,10 +26,17 @@ public class Task{
     private int idNpc;
     private int idTranscript;
     private TaskProgress taskProgress = TaskProgress.NoStart;
+    
+    
     public delegate void OnTaskChangeEvent();
     public event OnTaskChangeEvent OnTaskChanged;
 
     #region getset
+    public TaskDB taskDB
+    {
+        get;
+        set;
+    }
     public int Id
     {
         get { return id; }
@@ -101,4 +109,29 @@ public class Task{
     }
     #endregion 
 
+
+    public void AsyncTask(TaskDB taskdb)
+    {
+        this.taskDB = taskdb;
+        switch(taskdb.TaskState)
+        {
+            case TaskState.Accept:
+                taskProgress = TaskProgress.Accept;
+                break;
+            case TaskState.NotStart:
+                taskProgress = TaskProgress.NoStart;
+                break;
+            case TaskState.Complete:
+                taskProgress = TaskProgress.Complete;
+                break;
+            case TaskState.Reward:
+                taskProgress = TaskProgress.Reward;
+                break;
+        }
+    }
+
+    public void UpdateTAsk()
+    {
+
+    }
 }

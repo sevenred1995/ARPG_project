@@ -17,6 +17,7 @@ public class NpcManager : MonoBehaviour {
     {
         foreach(GameObject go in npcArray)
         {
+            //从NPC获取相关ID
             int id=int.Parse(go.name.Substring(0,4));
             npcDic.Add(id, go);
         }

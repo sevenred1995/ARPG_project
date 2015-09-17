@@ -44,6 +44,9 @@ public class KnapspackRole : MonoBehaviour
 
         playerInfo._instance.OnPlayerInfoChanged += this.OnPlayerInfoChanged;
     }
+    void Start() {
+        //UpdateShow();
+    }
     void OnDestory()
     {
         playerInfo._instance.OnPlayerInfoChanged -= this.OnPlayerInfoChanged;
@@ -58,21 +61,10 @@ public class KnapspackRole : MonoBehaviour
     void UpdateShow()
     {
         playerInfo info = playerInfo._instance;
-        
-        //helmEquip.SetEquip(info.HelmID);
-        //clothEquip.SetEquip(info.ClothID);
-        //weaponEquip.SetEquip(info.WeaponID);
-        //shoesEquip.SetEquip(info.ShoesID);
-        //necklaceEquip.SetEquip(info.NecklaceID);
-        //braceletEquip.SetEquip(info.BraceletID);
-        //ringEquip.SetEquip(info.RingID);
-        //wingEquip.SetEquip(info.WingID);
-
+        //装备的更新；
         helmEquip.SetInventoryItem(info.helmItem);
-        
         clothEquip.SetInventoryItem(info.clothItem);
         weaponEquip.SetInventoryItem(info.weaponItem);
-
         shoesEquip.SetInventoryItem(info.shoesItem);
         necklaceEquip.SetInventoryItem(info.necklaceItem);
         braceletEquip.SetInventoryItem(info.braceletItem);

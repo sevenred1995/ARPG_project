@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour {
     private float distanceAttackAround = 6f;
     private int[] damageArray = new int[] { 20, 30, 30, 30 };
 
-    public int hp = 1000;
+    private int hp = 1000;//表示的是角色当前血量
     private Animator anim;
 
     private GameObject hudText;
@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour {
     
     void Start()
     {
+        hp = playerInfo._instance.HP;
         PlayerAttackEffect[] peArray=transform.GetComponentsInChildren<PlayerAttackEffect>();
         foreach(PlayerAttackEffect pe in peArray)
         {
@@ -153,7 +154,7 @@ public class PlayerAttack : MonoBehaviour {
      
         foreach(GameObject go in enemyArray)
         {
-            Debug.Log(effectName);
+            //Debug.Log(effectName);
             PlayerAttackEffect goEffect = GameObject.Instantiate(pe) as PlayerAttackEffect;
             goEffect.transform.position = transform.position+Vector3.up;
             goEffect.transform.GetComponent<EffectSettings>().Target = go;
@@ -167,7 +168,7 @@ public class PlayerAttack : MonoBehaviour {
         ArrayList arrList = new ArrayList();
         if(attackRange==AttackRange.Forward)
         {
-            foreach(GameObject go in TranscriptManager._instance.enemyList)
+            foreach(GameObject go in TranscriptManager._instance.GetEnemyList())
             {
                 Vector3 pos=transform.InverseTransformPoint(go.transform.position);
                  if(pos.z>0)
@@ -182,7 +183,7 @@ public class PlayerAttack : MonoBehaviour {
         }
         else 
         {
-            foreach (GameObject go in TranscriptManager._instance.enemyList)
+            foreach (GameObject go in TranscriptManager._instance.GetEnemyList())
             {
 
                 float distance = Vector3.Distance(transform.position,go.transform.position);
@@ -200,17 +201,15 @@ public class PlayerAttack : MonoBehaviour {
         if (hp <= 0)
             return;
         hp -= damage;
-
         //播放受伤动画
+        PlayerBarInTranscript._instance.Show(hp);
         int randomNum = Random.Range(0, 100);
         if(randomNum<damage)
         {
-            anim.SetTrigger("takedamage");
-           
+            anim.SetTrigger("takedamage");       
         }
         //显示血量减少
         hudText.GetComponent<HUDText>().Add("-" + damage, Color.red, 0.2f);
-
         BloodScene._instance.showBloodScene();
     }
 }
