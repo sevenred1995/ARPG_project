@@ -16,18 +16,19 @@ public class BottonBar : MonoBehaviour {
             return _playerMove;
         }
     }
-
     public TweenScale TaskUItween;
     public TweenScale skillTween;
     public TweenPosition bagTween;
-
-
+    public TweenPosition shopTween;
+    public TweenScale SystemTween;
     void Awake()
     {
         task = transform.Find("task").GetComponent<UIButton>();
         skill = transform.Find("skill").GetComponent<UIButton>();
         bag = transform.Find("bag").GetComponent<UIButton>();
         combat=transform.Find("combat").GetComponent<UIButton>();
+        shop = transform.Find("shop").GetComponent<UIButton>();
+        system = transform.Find("system").GetComponent<UIButton>();
 
         EventDelegate tasked = new EventDelegate(this, "OnTask");
         task.onClick.Add(tasked);
@@ -37,11 +38,22 @@ public class BottonBar : MonoBehaviour {
 
         EventDelegate baged = new EventDelegate(this, "OnBag");
         bag.onClick.Add(baged);
-
         EventDelegate.Set(combat.onClick, () =>
         {
             OnCombat();
         });
+        EventDelegate.Set(shop.onClick, () =>
+        {
+            OnShop();
+        });
+        EventDelegate.Set(system.onClick, () =>
+        {
+            OnSystem();
+        });
+    }
+
+    private void OnSystem() {
+        SystemTween.PlayForward();
     }
 
     void OnCombat() {
@@ -62,5 +74,9 @@ public class BottonBar : MonoBehaviour {
     {
         bagTween.gameObject.SetActive(true);
         bagTween.PlayReverse();
+    }
+    void OnShop() {
+        shopTween.gameObject.SetActive(true);
+        shopTween.PlayForward();
     }
 }

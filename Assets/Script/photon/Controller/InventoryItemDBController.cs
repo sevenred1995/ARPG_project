@@ -39,6 +39,12 @@ public class InventoryItemDBController : ControllerBase {
         ParameterTool.AddParameters<List<InventoryItemDB>>(parameters, ParameterCode.InventoryItemdbList, itemDBList);
         PhotonEngine.Instance.SendRequest(opCode, SubCode.UpdateInventoryItemDBList, parameters);
     }
+    /// <summary>
+    /// 获取商店装备信息
+    /// </summary>
+    public void GetShopInventoryList() {
+        PhotonEngine.Instance.SendRequest(opCode, SubCode.GetShopInventoryDBList, new Dictionary<byte, object>());
+    }
     public override void OnOperationResponse(ExitGames.Client.Photon.OperationResponse response) {
         SubCode subCode = ParameterTool.GetParameters<SubCode>(response.Parameters, ParameterCode.SubCode, false);
         //Debug.Log("InventoryItemDB:"+subCode);
@@ -70,10 +76,19 @@ public class InventoryItemDBController : ControllerBase {
                 if (OnUpdateInventoryItemDBList!=null)
                     OnUpdateInventoryItemDBList();
                 break;
+            case  SubCode.GetShopInventoryDBList:
+                List<ShopInventoryDB> shoplist
+                  = ParameterTool.GetParameters<List<ShopInventoryDB>>(response.Parameters, ParameterCode.ShopInventorydbList);
+                if(OnGetShopInventoryDB!=null)
+                {
+                    OnGetShopInventoryDB(shoplist);
+                }
+                break;
         }
     }
     public event OnGetInventoryItemDBEvent OnGetInventoryItemDB;
     public event OnAddInventoryItemDBEvent OnAddInventoryItemDB;
     public event OnUpdateInventoryItemDBEvent OnUpdateInventoryItemDB;
     public event OnUpdateInventoryItemDBListEvent OnUpdateInventoryItemDBList;
+    public event OnGetShopInventoryDBEvent OnGetShopInventoryDB;
 }

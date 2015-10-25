@@ -9,16 +9,22 @@ public class SkillButton : MonoBehaviour {
     private UISprite maskSprite;
     private UIButton btn;
 	private PlayerAnimationControll playerAnimationControll;
-
+    private PlayerAttack playerAttack;
 	void Start()
 	{
 		playerAnimationControll=TranscriptManager._instance.player.GetComponent<PlayerAnimationControll>();
+        playerAttack = TranscriptManager._instance.player.GetComponent<PlayerAttack>();
         if(transform.Find("Mask"))
            maskSprite = transform.Find("Mask").GetComponent<UISprite>();  
         btn = this.GetComponent<UIButton>();
     }
     void Update()
     {
+        if(playerAttack.hp<=0)
+        {
+            this.GetComponent<UIButton>().isEnabled = false;
+            return;
+        }
         if (maskSprite == null) return;
         if (coldTimer > 0)
         {
@@ -52,6 +58,4 @@ public class SkillButton : MonoBehaviour {
     {
         this.collider.enabled = true;
     }
-
-	
 }

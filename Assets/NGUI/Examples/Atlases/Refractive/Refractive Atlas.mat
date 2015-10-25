@@ -7,7 +7,9 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Refractive Atlas
-  m_Shader: {fileID: 4800000, guid: e9bef69d3483c064f88f285d261cbd10, type: 1}
+  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -15,28 +17,28 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 1}
+          m_Texture: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: d76cce1d794620346b2ef8868ec101e5, type: 1}
+          m_Texture: {fileID: 2800000, guid: d76cce1d794620346b2ef8868ec101e5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _NormalMap
         second:
-          m_Texture: {fileID: 2800000, guid: d76cce1d794620346b2ef8868ec101e5, type: 1}
+          m_Texture: {fileID: 2800000, guid: d76cce1d794620346b2ef8868ec101e5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Mask
         second:
-          m_Texture: {fileID: 2800000, guid: 0428f8f60fa9fc44fbc83b1388991bca, type: 1}
+          m_Texture: {fileID: 2800000, guid: 0428f8f60fa9fc44fbc83b1388991bca, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:

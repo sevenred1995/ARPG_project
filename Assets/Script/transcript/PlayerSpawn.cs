@@ -23,6 +23,7 @@ public class PlayerSpawn : MonoBehaviour {
             }
             GameObject go=GameObject.Instantiate(playerPrefab, playerspawnPostion[0].position, Quaternion.identity) as GameObject;
             TranscriptManager._instance.player = go;
+            go.AddComponent<TouchControl>();//为新创建的角色添加eashtouch控制移动类
         }
         else
         {
@@ -40,6 +41,7 @@ public class PlayerSpawn : MonoBehaviour {
                    playerPrefab[i] = Resources.Load<GameObject>("player-transcript/Player-gril");
                }
                GameObject go=GameObject.Instantiate(playerPrefab[i], playerspawnPostion[i].position, Quaternion.identity) as GameObject;
+               go.AddComponent<TouchControl>();//为新创建的角色添加eashtouch控制移动类
                go.GetComponent<Player>().roleID = role.ID;
                GameManger._instance.AddPlayer(role.ID,go);
                if(role.ID==PhotonEngine.Instance.role.ID)

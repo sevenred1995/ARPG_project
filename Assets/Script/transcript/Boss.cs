@@ -27,9 +27,14 @@ public class Boss : MonoBehaviour {
     public GameObject damageEffectPrefab;
     private Vector3 lastPostion = Vector3.zero;
     private Vector3 lastEulerAnglers = Vector3.zero;
+    private MeshExploder me;
+
+    private float deadtimer = 0;
+    private float deadTime = 1f;
     void Start()
     {
         player = TranscriptManager._instance.player.transform;
+        me = gameObject.GetComponentInChildren<MeshExploder>();
         InvokeRepeating("GetDistance", 0, 0.1f);
         atcArray = transform.GetComponentsInChildren<BossAttackEffect>();
         bossBulletPrefab = Resources.Load<GameObject>("BossBullet");
@@ -43,6 +48,14 @@ public class Boss : MonoBehaviour {
 
     void Update()
     {
+        if (hp <= 0)
+        {
+            deadtimer+=Time.deltaTime;
+            if (deadtimer>=deadTime)
+            {
+                Destroy(this.gameObject);
+            }
+        }
         Vector3 playerPos = player.position;
         playerPos.y = transform.position.y;
         float angle = Vector3.Angle(playerPos-transform.position,transform.forward);
@@ -160,9 +173,7 @@ public class Boss : MonoBehaviour {
     void TakeDamage(string args)
     {
         if (hp <= 0) return;
-
         Combo._instance.ShowConboPlus();
-
         string[] proArray = args.Split(',');
         int damage = int.Parse(proArray[0]);
         hp -= damage;
@@ -172,12 +183,10 @@ public class Boss : MonoBehaviour {
         //播放攻击动画
         float backdistance = 0;
         float jumpHeight = 0;
-
         iTween.MoveBy(this.gameObject,
             transform.InverseTransformDirection(TranscriptManager._instance.player.transform.forward) * backdistance + Vector3.up * jumpHeight,
              0.3f);
         GameObject.Instantiate(damageEffectPrefab, bloodPoint.transform.position, Quaternion.identity);
-
         if (hp <= 0)
         {
             Dead();
@@ -185,7 +194,9 @@ public class Boss : MonoBehaviour {
     }
     void Dead()
     {
-
+        animation.Play("die");
+        me.Explode();
+        TranscriptManager._instance.RemoveEnemy(this.gameObject);
     }
     void SyncBossPostionRotation() {
         Vector3 postion = transform.position;

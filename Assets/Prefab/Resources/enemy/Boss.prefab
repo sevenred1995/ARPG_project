@@ -896,6 +896,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400114}
   - 137: {fileID: 13700000}
+  - 114: {fileID: 11400006}
+  - 33: {fileID: 3300000}
   m_Layer: 0
   m_Name: Object01
   m_TagString: Untagged
@@ -2024,6 +2026,13 @@ Transform:
   - {fileID: 400034}
   m_Father: {fileID: 400112}
   m_RootOrder: 2
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100114}
+  m_Mesh: {fileID: 4300000, guid: d11a4ef84e607744182734a8de9ab6d6, type: 3}
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2031,7 +2040,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100082}
   serializedVersion: 2
-  m_Mass: 60
+  m_Mass: 2000
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -2347,13 +2356,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe7c7724f137c74d86dec80aefdb449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1e+06
+  hp: 800
   viewAngle: 60
   rotateSpeed: 1
   attackDistance: 6
   moveSpeed: 2
   attackTimeInterval: 1
+  guid: 
   damageEffectPrefab: {fileID: 100008, guid: 1eade989a94acff43aa1549fbdbb471e, type: 2}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd71dcb0056342b08cb3e8851fac00b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  minSpeed: 1
+  maxSpeed: 5
+  minRotationSpeed: 90
+  maxRotationSpeed: 360
+  fadeWaitTime: .5
+  fadeTime: 2
+  useGravity: 0
+  colliderThickness: .125
+  useNormals: 0
+  useMeshBoundsCenter: 0
+  allowShadows: 0
+  shadersAlreadyHandleTransparency: 0
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

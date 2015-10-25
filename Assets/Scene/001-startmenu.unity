@@ -6429,8 +6429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   protocol: 1
-  serverAddress: 127.0.0.1:4530
-  applicationName: TaiDouServer
   isConnected: 0
   time: 3
 --- !u!4 &900162367

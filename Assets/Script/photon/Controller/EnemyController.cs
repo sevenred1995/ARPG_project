@@ -52,7 +52,6 @@ public class EnemyController : ControllerBase {
     public override void OnOperationResponse(OperationResponse response) {
         
     }
-
     public event OnCreateEnemyEvent OnCreateEnemy;
     public event OnAsyncEnemyPostionRotationEvent OnAsyncEnemyPostionRotation;
     public event OnSyncEnemyAnimationEvent OnSyncEnemyAnimation;

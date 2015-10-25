@@ -10,17 +10,22 @@ public class PlayerMove : MonoBehaviour {
     private float minDistance = 5f;
 
     public GameObject transcriptGo;
-    void Awake()
+
+    public bool isCanController=true;
+    void Start()
     {
         playeranim=this.GetComponent<Animator>();
         agent = this.GetComponent<NavMeshAgent>();
-        transcriptGo = GameObject.Find("transcriptGo");
+        transcriptGo = GameManger._instance.player;
     }
     void Update()
     {
-      
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        if(!isCanController)
+        {
+            return;
+        }
+        float h = this.GetComponent<TouchControl>().joyPositionX;
+        float v = this.GetComponent<TouchControl>().joyPositionY;
         Vector3 vel = rigidbody.velocity;
         rigidbody.velocity=new Vector3(-h,vel.y,-v)*MoveSpeed;
         //添加角色停止优化

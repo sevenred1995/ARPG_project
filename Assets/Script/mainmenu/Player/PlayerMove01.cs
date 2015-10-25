@@ -5,7 +5,6 @@ using System;
 public class PlayerMove01 : MonoBehaviour {
 	///在副本中实现对角色的控制移动
 	public float velocity=5;
-
     public bool isCanController = true;
 	private Animator anim;
     private Vector3 lastPostion=Vector3.zero;
@@ -13,8 +12,6 @@ public class PlayerMove01 : MonoBehaviour {
     private bool isMove = false;
     private DateTime lastdateTime = DateTime.Now;
     private BattleController battleController;
-
-
 	void Awake()
 	{
 		anim=this.GetComponent<Animator>();
@@ -32,8 +29,8 @@ public class PlayerMove01 : MonoBehaviour {
 	{
         if (!isCanController)
             return;
-		float h=Input.GetAxis("Horizontal");
-		float v=Input.GetAxis("Vertical");
+        float h = transform.GetComponent<TouchControl>().joyPositionX;
+		float v=transform.GetComponent<TouchControl>().joyPositionY;
 		
 		Vector3 nowvel = rigidbody.velocity; 
 		if (Mathf.Abs (h) > 0.05 || Mathf.Abs (v) > 0.05) {

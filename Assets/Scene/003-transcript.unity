@@ -1070,8 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyList: []
-  enemyController: {fileID: 0}
+  bossToSync: {fileID: 0}
 --- !u!114 &126664130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,7 +2744,7 @@ Transform:
   m_GameObject: {fileID: 342721185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9.47000027}
-  m_LocalScale: {x: .00345423142, y: .00345423142, z: .00345423142}
+  m_LocalScale: {x: .00306748459, y: .00306748459, z: .00306748459}
   m_Children:
   - {fileID: 1867784788}
   - {fileID: 1676530343}
@@ -4879,6 +4878,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1121873216}
   m_RootOrder: 65
+--- !u!1 &620606058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 620606060}
+  - 114: {fileID: 620606059}
+  m_Layer: 0
+  m_Name: Myjoystick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &620606059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620606058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316b516f511d7a14481885d6a94cad6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: 1
+  useFixedUpdate: 0
+  zoneRadius: 100
+  touchSize: 30
+  deadZone: 20
+  dynamicJoystick: 0
+  area: 0
+  joystickPosition: {x: 135, y: 135}
+  restrictArea: 0
+  ReceiverObjectGame: {fileID: 0}
+  messageMode: 0
+  enableSmoothing: 0
+  smoothing: {x: 2, y: 2}
+  enableInertia: 0
+  inertia: {x: 100, y: 100}
+  showZone: 1
+  showTouch: 1
+  showDeadZone: 1
+  areaTexture: {fileID: 2800000, guid: b2e481694c2a82e4b95de00cd84564b8, type: 3}
+  touchTexture: {fileID: 2800000, guid: 4845c9cf0f6bd784ca5063b94f267228, type: 3}
+  deadTexture: {fileID: 2800000, guid: e8b625ff4417c6742990d3077097ddca, type: 3}
+  useBroadcast: 0
+  speed: {x: 0, y: 0}
+  interaction: 3
+  xAxisTransform: {fileID: 0}
+  xAxisCharacterController: {fileID: 0}
+  xAxisGravity: 0
+  xTI: 0
+  xAI: 0
+  inverseXAxis: 0
+  yAxisTransform: {fileID: 0}
+  yAxisCharacterController: {fileID: 0}
+  yAxisGravity: 0
+  yTI: 0
+  yAI: 0
+  inverseYAxis: 0
+  showProperties: 1
+  showInteraction: 1
+  showAppearance: 1
+--- !u!4 &620606060
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620606058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
 --- !u!1 &630188793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,7 +6592,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 907506875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -331.5, y: 244.5, z: 0}
+  m_LocalPosition: {x: -389.5, y: 281, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1235250565}
@@ -6587,6 +6664,65 @@ MonoBehaviour:
   hpslider: {fileID: 941207711}
   hpLabel: {fileID: 1844316233}
   headSprite: {fileID: 1235250566}
+--- !u!1 &915361495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 915361497}
+  - 114: {fileID: 915361496}
+  m_Layer: 0
+  m_Name: EasyTouch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &915361496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915361495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e773f2bb96f9746a02cd08848c9aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: 1
+  enableRemote: 0
+  useBroadcastMessage: 0
+  joystickAddon: 0
+  enable2FingersGesture: 1
+  enableTwist: 1
+  enablePinch: 1
+  autoSelect: 1
+  pickableLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  StationnaryTolerance: 25
+  longTapTime: 1
+  swipeTolerance: .850000024
+  minPinchLength: 0
+  minTwistAngle: 1
+  showGeneral: 1
+  showSelect: 1
+  showGesture: 1
+  showTwoFinger: 1
+--- !u!4 &915361497
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915361495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
 --- !u!1 &928674068
 GameObject:
   m_ObjectHideFlags: 0
@@ -10972,13 +11108,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 0, b: 0, a: 0}
   mPivot: 4
-  mWidth: 927
-  mHeight: 579
+  mWidth: 1043
+  mHeight: 652
   mDepth: 12
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.60103631
+  aspectRatio: 1.59948325
   mType: 4
   mFillDirection: 4
   mFillAmount: 1
@@ -11857,7 +11993,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1676530341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 359.5, y: -187.5, z: 0}
+  m_LocalPosition: {x: 417.5, y: -224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469115818}

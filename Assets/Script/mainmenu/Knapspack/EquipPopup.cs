@@ -113,6 +113,7 @@ public class EquipPopup : MonoBehaviour {
         {
             it.Level += 1;
             //等级改变，其他战斗力属性值也会随之改变。。。
+            
             //更改装备等级属性
             itemController.UpdateInventoryItemDB(it.InventoryItemDB);
             //TODO  

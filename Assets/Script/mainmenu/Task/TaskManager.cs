@@ -24,7 +24,7 @@ public class TaskManager : MonoBehaviour {
 
     private TaskDBController taskDBController;
 
-    public event OnAsyncTaskCompleteEvent OnAsyncTaskComplete;
+    public OnAsyncTaskCompleteEvent OnAsyncTaskComplete;
     
     void Awake()
     {
@@ -55,7 +55,6 @@ public class TaskManager : MonoBehaviour {
         ///event事件没有注册成功。。
         if (this.OnAsyncTaskComplete != null)
         {
-            Debug.Log("async");
             OnAsyncTaskComplete();
         }    
         else

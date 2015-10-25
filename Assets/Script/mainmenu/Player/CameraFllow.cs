@@ -5,9 +5,10 @@ public class CameraFllow : MonoBehaviour {
     public GameObject player;
     public Vector3 offset;
     public float smoothing = 2;
+    public bool isController=true;
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameManger._instance.player;
     }
     void FixedUpdate()
     {

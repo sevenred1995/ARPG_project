@@ -28,8 +28,9 @@ public class EnemySpawnTrigger : MonoBehaviour {
         }
         else if(GameManger._instance.battleType==BattleType.Team)
         {
-            if (other.transform.tag == "Player" && isSpawn == false&&GameManger._instance.isMaster)
+            if (other.transform.tag == "Player" && isSpawn == false &&GameManger._instance.isMaster)
             {
+                Debug.Log("this is master");
                 isSpawn = true;
                 StartCoroutine(SpawnEnemy());
             } 
@@ -62,8 +63,9 @@ public class EnemySpawnTrigger : MonoBehaviour {
                 TranscriptManager._instance.AddEnemy(enemy);
                 yield return new WaitForSeconds(repeateTime);
             }
-            if(GameManger._instance.battleType==BattleType.Team&&GameManger._instance.isMaster)
+            if(GameManger._instance.battleType==BattleType.Team && GameManger._instance.isMaster)
             {
+                Debug.Log("this is master");
                 CreateEnemyModel model = new CreateEnemyModel();
                 model.list = list;
                 enemyController.SendCreateEnemy(model);

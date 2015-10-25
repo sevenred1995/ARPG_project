@@ -26,8 +26,14 @@ public delegate void OnCancelTeamEvent();
 
 public delegate void OnAsyncPostionAndRotationEvent(int roleID,Vector3 pos,Vector3 eulerAnglers);
 public delegate void OnAsyncPlayerMoveAnimationEvent(int roleID,PlayerMoveAnimationModel model);
+public delegate void OnSyncPlayerAnimationEvent(int roleID,PlayerAnimationModel model);
 
 public delegate void OnCreateEnemyEvent(CreateEnemyModel model);
 
 public delegate void OnAsyncEnemyPostionRotationEvent(EnemyPostionModel model);
 public delegate void OnSyncEnemyAnimationEvent(EnemyAnimationModel model);
+
+public delegate void OnGetShopInventoryDBEvent(List<ShopInventoryDB> list);
+
+public delegate void OnGetPlayerListEvent(List<Role> list);
+

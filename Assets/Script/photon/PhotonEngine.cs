@@ -15,20 +15,15 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
     }
 
     public ConnectionProtocol protocol = ConnectionProtocol.Tcp;
-    public string serverAddress = "127.0.0.1:4530";
-    public string applicationName = "TaiDouServer";
-
+    private string serverAddress = "172.16.6.88:4530";
+    private string applicationName = "TaiDouServer";
     private Dictionary<byte, ControllerBase> controllers = new Dictionary<byte, ControllerBase>();
-
     public PhotonPeer peer;
     public bool isConnected=false;
-
     public delegate void OnConnectedToServerEvent();
     public event OnConnectedToServerEvent OnconnectedToServer;
-
     public float time = 3f;
     private float timer;
-
     public static User user;
     public Role role;
     public List<Role> rolelist;
@@ -42,6 +37,16 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
     }
     void Update()
     {
+
+        if (!isConnected)
+        {
+            timer += Time.deltaTime;
+            if(timer>time)
+            {
+                peer.Connect(serverAddress, applicationName);
+                timer = 0;
+            }
+        }
         if (peer != null)
             peer.Service();//向服务器发起请求
     }
@@ -86,7 +91,6 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
         else
             Debug.LogWarning("receieve unknown event+OperationCode:"+opCode);
     }
-
     public void OnOperationResponse(OperationResponse operationResponse)
     {
         ControllerBase controller;
@@ -110,10 +114,22 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
                 break;
             case StatusCode.Disconnect:
                 isConnected = false;
-                MessageManager._instance.ShowMessage("与服务器失去连接");
+                MessageManager._instance.ShowMessage("与服务器失去连接...");
                 break;
             case StatusCode.TimeoutDisconnect:
-                MessageManager._instance.ShowMessage("连接超时。。");
+                MessageManager._instance.ShowMessage("连接超时...");
+                break;
+            case StatusCode.DisconnectByServer:
+                MessageManager._instance.ShowMessage("连接超时...");
+                break;
+            case StatusCode.DisconnectByServerLogic:
+                MessageManager._instance.ShowMessage("1...");
+                break;
+            case StatusCode.ExceptionOnConnect:
+                MessageManager._instance.ShowMessage("2...");
+                break;
+            case StatusCode.SendError:
+                MessageManager._instance.ShowMessage("未连接，请求失败");
                 break;
             default:
                 isConnected = false;

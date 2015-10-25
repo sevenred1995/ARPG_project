@@ -13,6 +13,11 @@ public class BattleController : ControllerBase {
     public override void Start() {
         base.Start();
     }
+    public void SyncPlayerAnimation(PlayerAnimationModel model) {
+        Dictionary<byte,object> parameters=new Dictionary<byte,object>();
+        ParameterTool.AddParameters<PlayerAnimationModel>(parameters, ParameterCode.PlayerAnimationModel,model);
+        PhotonEngine.Instance.SendRequest(opCode, SubCode.SyncPlayerAnimation, parameters);
+    }
     //向服务器发起角色移动动画信息的同步
     public void AsyncPlayerMoveAnimation(PlayerMoveAnimationModel model) {
         Dictionary<byte, object> parameters = new Dictionary<byte, object>();
@@ -58,6 +63,14 @@ public class BattleController : ControllerBase {
                 if (OnAsyncPlayerMoveAnimation != null)
                     OnAsyncPlayerMoveAnimation(roleid2, model);
                 break;
+            case SubCode.SyncPlayerAnimation:
+                int roleid3 = ParameterTool.GetParameters<int>(eventData.Parameters, ParameterCode.RoleID, false);
+                PlayerAnimationModel animationModel = ParameterTool.GetParameters<PlayerAnimationModel>(eventData.Parameters, ParameterCode.PlayerAnimationModel);
+                if(OnSyncPlayerAnimation!=null)
+                {
+                    OnSyncPlayerAnimation(roleid3, animationModel);
+                }
+                break;
         }
     }
     public override void OnOperationResponse(ExitGames.Client.Photon.OperationResponse response) {
@@ -94,4 +107,5 @@ public class BattleController : ControllerBase {
     public event OnCancelTeamEvent OnCancelTeam;
     public event OnAsyncPostionAndRotationEvent OnAsyncPostionAndRotation;
     public event OnAsyncPlayerMoveAnimationEvent OnAsyncPlayerMoveAnimation;
+    public event OnSyncPlayerAnimationEvent OnSyncPlayerAnimation;
 }

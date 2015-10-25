@@ -143,7 +143,6 @@ public class Enemy : MonoBehaviour {
     }
     void Dead()
     {
-
         cc.enabled = false;
         Destroy(hpBar);
         Destroy(damageHudText);

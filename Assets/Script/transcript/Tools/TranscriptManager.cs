@@ -38,7 +38,7 @@ public class TranscriptManager : MonoBehaviour {
             GameObject enemyPrefab = Resources.Load<GameObject>("enemy/" + propety.PrefabName);
             GameObject go=GameObject.Instantiate(enemyPrefab, propety.Postion.ToVector3(), Quaternion.identity) as GameObject;
             if (go.GetComponent<Enemy>() != null)
-            {
+            { 
                 go.GetComponent<Enemy>().guid = propety.GUID;
             }
             else if (go.GetComponent<Boss>() != null)

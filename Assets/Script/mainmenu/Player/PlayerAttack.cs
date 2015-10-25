@@ -2,28 +2,31 @@
 using System.Collections;
 using System.Collections.Generic;
 public class PlayerAttack : MonoBehaviour {
-
-    
     private Dictionary<string, PlayerAttackEffect> effectDic = new Dictionary<string, PlayerAttackEffect>();
     public PlayerAttackEffect[] playerEffectArray;
-
     private float distanceAttackForward = 1.4f;
     private float distanceAttackAround = 6f;
     private int[] damageArray = new int[] { 20, 30, 30, 30 };
-
-    private int hp = 1000;//表示的是角色当前血量
+    public  int hp = 1000;//表示的是角色当前血量
     private Animator anim;
-
     private GameObject hudText;
     private GameObject hpPoint;
+    private Player player;
+    private BattleController battleController;
+    private bool isSyncPlayerAnimation = false;
     public enum AttackRange
     {
         Forward,
         Around
     }
-    
     void Start()
     {
+        player = GetComponent<Player>();
+        if(GameManger._instance.battleType==BattleType.Team&&PhotonEngine.Instance.role.ID==player.roleID)
+        {
+            battleController = GameManger._instance.GetComponent<BattleController>();
+            isSyncPlayerAnimation = true;
+        }
         hp = playerInfo._instance.HP;
         PlayerAttackEffect[] peArray=transform.GetComponentsInChildren<PlayerAttackEffect>();
         foreach(PlayerAttackEffect pe in peArray)
@@ -199,17 +202,34 @@ public class PlayerAttack : MonoBehaviour {
     void TakeDamageByEnemy(int damage)
     {
         if (hp <= 0)
+        {
+            Dead();
             return;
+        }
         hp -= damage;
         //播放受伤动画
         PlayerBarInTranscript._instance.Show(hp);
         int randomNum = Random.Range(0, 100);
         if(randomNum<damage)
         {
-            anim.SetTrigger("takedamage");       
+            anim.SetTrigger("takedamage");
+            if(isSyncPlayerAnimation)
+            {
+                PlayerAnimationModel model = new PlayerAnimationModel() { takedamage = true };
+                battleController.SyncPlayerAnimation(model);
+            }
         }
         //显示血量减少
         hudText.GetComponent<HUDText>().Add("-" + damage, Color.red, 0.2f);
         BloodScene._instance.showBloodScene();
+    }
+    void Dead() {
+        anim.SetBool("die", true);
+        if (isSyncPlayerAnimation)
+        {
+            PlayerAnimationModel model = new PlayerAnimationModel() { die = true };
+            battleController.SyncPlayerAnimation(model);
+        }
+        this.GetComponent<PlayerMove01>().enabled = false;
     }
 }
