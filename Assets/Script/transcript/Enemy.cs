@@ -33,9 +33,9 @@ public class Enemy : MonoBehaviour {
     
     void Start()
     {
-        bloodPoint = transform.Find("BloodPoint").transform;
-        hpPoint = transform.Find("HpPoint").transform;
-        cc = this.GetComponent<CharacterController>();
+        bloodPoint  = transform.Find("BloodPoint").transform;
+        hpPoint     = transform.Find("HpPoint").transform;
+        cc          = this.GetComponent<CharacterController>();
         InvokeRepeating("GetCurrentDistance", 0, 0.1f);
         attackTimer = attackRate;
         hp = TotalHp;
@@ -101,7 +101,6 @@ public class Enemy : MonoBehaviour {
         transform.LookAt(targetPos);
         cc.SimpleMove(transform.forward * speed);
     }
-
     void Attack()
     {
         TranscriptManager._instance.player.transform.SendMessage("TakeDamageByEnemy",attack,SendMessageOptions.DontRequireReceiver);
@@ -112,7 +111,6 @@ public class Enemy : MonoBehaviour {
     void TakeDamage(string args)
     {
         if (hp <= 0) return;
-
         Combo._instance.ShowConboPlus();
 
         string[] proArray = args.Split(',');
@@ -124,11 +122,8 @@ public class Enemy : MonoBehaviour {
         hudText.Add("-" + damage, Color.red, 0.2f);
         //播放攻击动画
         animation.Play("takedamage");
-       
-
         float backdistance = float.Parse(proArray[1]);
         float jumpHeight =0;
-
 
         iTween.MoveBy(this.gameObject,
             transform.InverseTransformDirection(TranscriptManager._instance.player.transform.forward) * backdistance + Vector3.up * jumpHeight,
@@ -178,11 +173,10 @@ public class Enemy : MonoBehaviour {
         {
             TranscriptManager._instance.AddEnemyAnimationToSync(this);//
             lastisAttack = animation.IsPlaying("attack01");
-            lastisIdle = animation.IsPlaying("idle");
-            lastisDie = animation.IsPlaying("die");
+            lastisIdle   = animation.IsPlaying("idle");
+            lastisDie    = animation.IsPlaying("die");
             lastisTakeDamage = animation.IsPlaying("takedamage");
-            lastisWalk = animation.IsPlaying("walk");
+            lastisWalk       = animation.IsPlaying("walk");
         }
     }
-
 }

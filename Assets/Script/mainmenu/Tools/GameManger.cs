@@ -27,7 +27,7 @@ public class GameManger : MonoBehaviour {
         DontDestroyOnLoad(this.gameObject);
         playerController = this.GetComponent<PlayerController>();
         playerController.OnGetPlayerList += this.OnGetPlayerList;
-        playerController.GetPlayerList();
+        //playerController.GetPlayerList();
         pos=GameObject.Find("spawnPos");
         string prefabname = "Player-gril";
         if(PhotonEngine.Instance.role!=null)

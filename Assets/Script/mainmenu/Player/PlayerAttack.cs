@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class PlayerAttack : MonoBehaviour {
     private Dictionary<string, PlayerAttackEffect> effectDic = new Dictionary<string, PlayerAttackEffect>();
-    public PlayerAttackEffect[] playerEffectArray;
+    public  PlayerAttackEffect[] playerEffectArray;
     private float distanceAttackForward = 1.4f;
     private float distanceAttackAround = 6f;
     private int[] damageArray = new int[] { 20, 30, 30, 30 };

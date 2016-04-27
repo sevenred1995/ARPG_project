@@ -24,8 +24,19 @@ public class PlayerMove : MonoBehaviour {
         {
             return;
         }
-        float h = this.GetComponent<TouchControl>().joyPositionX;
-        float v = this.GetComponent<TouchControl>().joyPositionY;
+        float h ;
+        float v ;
+        if(Application.platform==RuntimePlatform.Android)
+        {
+            h= this.GetComponent<TouchControl>().joyPositionX;
+            v= this.GetComponent<TouchControl>().joyPositionY;
+        }
+        else
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+        }
+
         Vector3 vel = rigidbody.velocity;
         rigidbody.velocity=new Vector3(-h,vel.y,-v)*MoveSpeed;
         //添加角色停止优化

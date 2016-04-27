@@ -4,8 +4,8 @@ using System;
 
 public class PlayerMove01 : MonoBehaviour {
 	///在副本中实现对角色的控制移动
-	public float velocity=5;
-    public bool isCanController = true;
+	public  float velocity=5;
+    public  bool isCanController = true;
 	private Animator anim;
     private Vector3 lastPostion=Vector3.zero;
     private Vector3 lastEulerAnglers = Vector3.zero;
@@ -24,14 +24,22 @@ public class PlayerMove01 : MonoBehaviour {
             InvokeRepeating("AsyncPlayerMoveAnimation", 0, 1f / 30);
         }
     }
-	
 	void Update()
 	{
         if (!isCanController)
             return;
-        float h = transform.GetComponent<TouchControl>().joyPositionX;
-		float v=transform.GetComponent<TouchControl>().joyPositionY;
-		
+        float h=0;
+        float v=0;
+        if(Application.platform==RuntimePlatform.Android)
+        {
+            h = transform.GetComponent<TouchControl>().joyPositionX;
+            v =transform.GetComponent<TouchControl>().joyPositionY;
+        }
+        else
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+        }
 		Vector3 nowvel = rigidbody.velocity; 
 		if (Mathf.Abs (h) > 0.05 || Mathf.Abs (v) > 0.05) {
             anim.SetBool("move", true);

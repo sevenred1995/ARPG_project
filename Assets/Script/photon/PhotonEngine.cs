@@ -5,6 +5,7 @@ using ExitGames.Client.Photon;
 using TaiDouCommon;
 using TaiDouCommon.Model;
 using TaiDouCommon.Tools;
+using System.Net;
 
 public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
 
@@ -13,26 +14,28 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
     {
         get {return _instance;}
     }
-
-    public ConnectionProtocol protocol = ConnectionProtocol.Tcp;
-    private string serverAddress = "172.16.6.88:4530";
+    public  ConnectionProtocol protocol = ConnectionProtocol.Tcp;
+    private string serverAddress = ":15321";
     private string applicationName = "TaiDouServer";
     private Dictionary<byte, ControllerBase> controllers = new Dictionary<byte, ControllerBase>();
-    public PhotonPeer peer;
-    public bool isConnected=false;
-    public delegate void OnConnectedToServerEvent();
-    public event OnConnectedToServerEvent OnconnectedToServer;
-    public float time = 3f;
+    public  PhotonPeer peer;
+    public  bool isConnected=false;
+    public  delegate void OnConnectedToServerEvent();
+    public  event OnConnectedToServerEvent OnconnectedToServer;
+    public  float time = 3f;
     private float timer;
-    public static User user;
-    public Role role;
-    public List<Role> rolelist;
- 
+    public  static User user;
+    public  Role role;
+    public  List<Role> rolelist;
     void Awake()
     {
+        //Dns.GetHostName();
+        IPAddress ipAddr = Dns.GetHostEntry("1462z254b3.iok.la").AddressList[0];
+        string ip = ipAddr.ToString();//"1462z254b3.iok.la";//ipAddr.ToString();
+        Debug.Log(ip);
         _instance = this;
         peer = new PhotonPeer(this, protocol);
-        peer.Connect(serverAddress, applicationName);
+        peer.Connect(ip+serverAddress, applicationName);
         DontDestroyOnLoad(this.gameObject);
     }
     void Update()
@@ -69,6 +72,7 @@ public class PhotonEngine : MonoBehaviour,IPhotonPeerListener {
         //Debug.Log("sendrequest to server,opCode" + opCode);
         peer.OpCustom((byte)opCode, parameters,true);//向服务器发送消息
     }
+    //opCode---表示在哪一个模块----subCode---表示某个子模块
     public void SendRequest(OperationCode opCode, SubCode subCode, Dictionary<byte, object> parameters)
     {
         //Debug.Log("sendrequest to server,opCode: " + opCode+"SubCode: "+subCode);

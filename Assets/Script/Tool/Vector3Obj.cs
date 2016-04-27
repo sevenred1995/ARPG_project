@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class Vector3Obj{
+    /// <summary>
+    /// 备注：使用double而不使用float是因为LitJson不支持序列化float类型
+    /// </summary>
     public double x { get; set; }
     public double y { get; set; }
     public double z { get; set; }
